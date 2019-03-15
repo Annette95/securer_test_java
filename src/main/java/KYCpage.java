@@ -1,8 +1,11 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import java.io.File;
+import java.util.List;
+import java.util.Random;
 
 public class KYCpage {
 
@@ -12,27 +15,39 @@ public class KYCpage {
         this.driver = driver;
     }
 
-    private By companyNameField = By.id("companyName");
-    private By companyWebsiteField = By.id("companyWebsite");
-    private By firstNameField = By.id("firstName");
-    private By lastNameField = By.id("lastName");
-    private By emailField = By.id("email");
-    private By sizeOfOfferingField = By.id("sizeOfOffering");
-    private By yearFoundedField = By.id("yearFounded");
-    private By workersCountField = By.id("workersCount");
-    private By nextButton = By.id("next");
+    @FindBy(id = "companyName")
+    private WebElement companyNameField;
+    @FindBy(id = "companyWebsite")
+    private WebElement companyWebsiteField;
+    @FindBy(id = "firstName")
+    private WebElement firstNameField;
+    @FindBy(id = "lastName")
+    private WebElement lastNameField;
+    @FindBy(id = "email")
+    private WebElement emailField;
+    @FindBy(id = "sizeOfOffering")
+    private WebElement sizeOfOfferingField;
+    @FindBy(id = "yearFounded")
+    private WebElement yearFoundedField;
+    @FindBy(id = "workersCount")
+    private WebElement workersCountField;
+    @FindBy(id = "next")
+    private WebElement nextButton;
 
 
-    public KYCpage fillKKYC1stStep(String company, String site, String fname, String lname, String email, String size, String year, String workers) {
-        driver.findElement(companyNameField).sendKeys(company);
-        driver.findElement(companyWebsiteField).sendKeys(site);
-        driver.findElement(firstNameField).sendKeys(fname);
-        driver.findElement(lastNameField).sendKeys(lname);
-        driver.findElement(emailField).sendKeys(email);
-        driver.findElement(sizeOfOfferingField).sendKeys(size);
-        driver.findElement(yearFoundedField).sendKeys(year);
-        driver.findElement(workersCountField).sendKeys(workers);
-        driver.findElement(nextButton).click();
+    public KYCpage fillKKYC1stStep(String company, String site,
+                                   String fname, String lname,
+                                   String email, String size, String year,
+                                   String workers) {
+        companyNameField.sendKeys(company);
+        companyWebsiteField.sendKeys(site);
+        firstNameField.sendKeys(fname);
+        lastNameField.sendKeys(lname);
+        emailField.sendKeys(email);
+        sizeOfOfferingField.sendKeys(size);
+        yearFoundedField.sendKeys(year);
+        workersCountField.sendKeys(workers);
+        nextButton.click();
         return this;
     }
 
@@ -53,7 +68,7 @@ public class KYCpage {
     }
 
     public KYCpage clickNext() {
-        driver.findElement(nextButton).click();
+        nextButton.click();
         return this;
     }
 

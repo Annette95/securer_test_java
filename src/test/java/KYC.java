@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,8 +22,8 @@ public class KYC
         driver.get("https://dev-company.securer.io");
         signIn = new SignInPage(driver);
         dashboard = new DashboardPage(driver);
-        kyc = new KYCpage(driver);
-        signIn.typeEmail("demo-company+33293098@securer.io")
+        kyc = PageFactory.initElements(driver,KYCpage.class);
+        signIn.typeEmail("demo-company+333293098@securer.io")
                 .typePassword("qwe123")
                 .clickLogIn();
         dashboard.clickProfile();
@@ -37,7 +38,15 @@ public class KYC
 
     @Test
     public void FillKYCFORM() {
-        kyc.fillKKYC1stStep("pharma","pharma.com","Anna","Miller","canavinanna@gmail.com","200000", "2000", "12");
+        kyc.fillKKYC1stStep(
+                "pharma",
+                "pharma.com",
+                "Anna",
+                "Miller",
+                "canavinanna@gmail.com",
+                "200000",
+                "2000",
+                "12");
         kyc.selectSector("Select sector", "Housing");
         kyc.selectCountry("Select country","Antarctica");
         kyc.clickNext();
@@ -47,7 +56,7 @@ public class KYC
         kyc.uploadFile("file_4","kity.jpg");
         kyc.uploadFile("file_5","kity.jpg");
         kyc.clickNext();
-        kyc.clickNext();
+//        kyc.clickNext();
 
     }
 

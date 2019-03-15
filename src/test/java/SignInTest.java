@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class SignInTest {
     private WebDriver driver;
     private SignInPage signIn;
+    private DataForTests data;
 
     @Before
     public void setUp() {
@@ -27,7 +28,7 @@ public class SignInTest {
     @Test
     public void loginAdCompany() {
         signIn = new SignInPage(driver);
-        signIn.typeEmail("demo-company+33293098@securer.io")
+        signIn.typeEmail("demo-company+333293098@securer.io")
                 .typePassword("qwe123")
                 .clickLogIn();
 
