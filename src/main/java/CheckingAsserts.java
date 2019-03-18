@@ -14,9 +14,12 @@ import static java.lang.String.format;
 public class CheckingAsserts {
     private WebDriver driver;
 
-    public CheckingAsserts (WebDriver driver) {
+    public CheckingAsserts(WebDriver driver) {
         this.driver = driver;
     }
+
+    String urlCompany = "https://dev-company.securer.io/";
+    String urlInvestor = "https://dev-investor.securer.io/";
 
     @FindBy(css = "div.toastr.animated.rrt-success")
     public WebElement successfulPopuP;
@@ -24,13 +27,12 @@ public class CheckingAsserts {
     @FindBy(css = "div.toastr.animated.rrt-error")
     public WebElement errorPopUp;
 
-    @FindBy(css = "div.invalid-feedback" )
+    @FindBy(css = "div.invalid-feedback")
     public WebElement errorMessage;
 
     public By errorTexts = By.cssSelector("div.invalid-feedback");
 
     private String errorByText = "//*[text()='%s']";
-
 
 
     public WebElement isElementLoaded(WebElement elementToBeLoaded) {
@@ -43,8 +45,8 @@ public class CheckingAsserts {
         List<WebElement> elements = driver.findElements(errorTexts);
 
         List<String> errorMessages = new ArrayList<String>();
-        for (WebElement element:elements) {
-            if(!element.getText().isEmpty()){
+        for (WebElement element : elements) {
+            if (!element.getText().isEmpty()) {
                 errorMessages.add(element.getText());
             }
         }
@@ -55,8 +57,8 @@ public class CheckingAsserts {
         return driver.findElements(By.xpath(format(errorByText, message))).size() > 0;
     }
 
-    public String[] getLoginErrorLabels(){
-        return (String[])getErrors().toArray();
+    public String[] getErrorLabels() {
+        return (String[]) getErrors().toArray();
     }
 
 }

@@ -1,10 +1,11 @@
 import org.hamcrest.CoreMatchers;
-import org.junit.*;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.*;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -13,8 +14,9 @@ public class SignUpTest {
     private WebDriver driver;
     private SignUpPage page;
     private CheckingAsserts message;
+    private DashboardPage dashboard;
 
-    @Before
+    @BeforeMethod
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "/Users/developer/Desktop/drivers/chromedriver");
         driver = new ChromeDriver();
@@ -22,9 +24,10 @@ public class SignUpTest {
         driver.get("https://dev-company.securer.io/register");
         page = new SignUpPage(driver);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
+        dashboard = PageFactory.initElements(driver, DashboardPage.class);
     }
 
-    @After
+    @AfterMethod
     public void closeDriver() {
         driver.quit();
     }
@@ -33,8 +36,8 @@ public class SignUpTest {
     @Test
     public void emptyForm() {
         page.clickRegister();
-        List<String> errorLabels = Arrays.asList("Required","Required","Required");
-        Assert.assertEquals("Incorrect errors",errorLabels,message.getErrors());
+        List<String> errorLabels = Arrays.asList("Required", "Required", "Required");
+        Assert.assertEquals("Incorrect errors", errorLabels, message.getErrors());
     }
 
     @Test
@@ -63,8 +66,17 @@ public class SignUpTest {
                 .repeatPass("23432234")
                 .clickRegister();
         List<String> errorLabels = Arrays.asList("Passwords don't match");
-        Assert.assertEquals("Incorrect errors",errorLabels,message.getErrors());
+        Assert.assertEquals("Incorrect errors", errorLabels, message.getErrors());
     }
 
-
+    @Test
+    public void successfullRegister() {
+        page.typeEmail("demo-company+3@securer.io")
+                .typePaasword("qwe123")
+                .repeatPass("qwe123")
+                .clickRegister();
+        message.isElementLoaded(dashboard.sideBar);
+        Assert.assertThat(driver.getCurrentUrl(),CoreMatchers.equalTo(message.urlCompany +"dashboard"));
+    }
 }
+

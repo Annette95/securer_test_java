@@ -1,5 +1,9 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import static java.lang.String.format;
 
 public class DashboardPage {
 
@@ -9,19 +13,35 @@ public class DashboardPage {
         this.driver = driver;
     }
 
-    private By assetsLink = By.xpath("//a[@href='/assets']");
-    private By profileLink = By.xpath("//a[@href='/profile']");
+    @FindBy (xpath = "//a[@href='/assets']")
+    public WebElement assetsLink;
+
+    @FindBy(xpath ="//a[@href='/profile']" )
+    public WebElement profileLink;
+
+    @FindBy(linkText = "//a[@href='/dashboard']")
+    public WebElement dashboardLink;
+
+    @FindBy(css = "div.scrollbar-container.sidebar-content.ps")
+    public WebElement sideBar;
+
 
 
     public DashboardPage clickAssets () {
-        driver.findElement(assetsLink).click();
+        assetsLink.click();
         return this;
     }
 
 
     public DashboardPage clickProfile () {
-        driver.findElement(profileLink).click();
+        profileLink.click();
         return this;
     }
+
+    public DashboardPage clickDashboard () {
+        dashboardLink.click();
+        return this;
+    }
+
 }
 
