@@ -1,4 +1,6 @@
+import org.hamcrest.CoreMatchers;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +15,7 @@ public class KYC
     private SignInPage signIn;
     private DashboardPage dashboard;
     private KYCpage kyc;
+    private CheckingAsserts message;
 
     @Before
     public void setUp() {
@@ -23,7 +26,9 @@ public class KYC
         signIn = new SignInPage(driver);
         dashboard = new DashboardPage(driver);
         kyc = PageFactory.initElements(driver,KYCpage.class);
-        signIn.typeEmail("demo-company+333293098@securer.io")
+        message = PageFactory.initElements(driver,CheckingAsserts.class);
+
+        signIn.typeEmail("demo-company+934547680@securer.io")
                 .typePassword("qwe123")
                 .clickLogIn();
         dashboard.clickProfile();
@@ -31,10 +36,10 @@ public class KYC
 
     }
 
-//    @After
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @After
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
     public void FillKYCFORM() {
@@ -56,8 +61,9 @@ public class KYC
         kyc.uploadFile("file_4","kity.jpg");
         kyc.uploadFile("file_5","kity.jpg");
         kyc.clickNext();
-//        kyc.clickNext();
-
+        kyc.clickNext();
+        message.isElementLoaded(message.successfulPopuP);
+        Assert.assertThat(message.successfulPopuP.getText(),CoreMatchers.containsString("KYC was successfully submitted!"));
     }
 
 }
