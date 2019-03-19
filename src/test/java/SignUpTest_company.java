@@ -5,24 +5,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
 
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class SignUpTest {
+public class SignUpTest_company {
     private WebDriver driver;
     private SignUpPage page;
     private CheckingAsserts message;
     private DashboardPage dashboard;
+    private DataOfUser data;
+
 
     @BeforeMethod
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "/Users/developer/Desktop/drivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.get("https://dev-company.securer.io/register");
-        page = new SignUpPage(driver);
+        data = new DataOfUser(driver);
+        driver.get(data.urlCompany+"/register");
+        page = PageFactory.initElements(driver, SignUpPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
     }
@@ -42,9 +44,9 @@ public class SignUpTest {
 
     @Test
     public void introducingInvalidEmail() {
-        page.typeEmail("company@example.com")
-                .typePaasword("qwe123")
-                .repeatPass("qwe123")
+        page.typeEmail(data.companyEmail)
+                .typePassword(data.password)
+                .repeatPass(data.password)
                 .clickRegister();
         message.isElementLoaded(message.errorPopUp);
         Assert.assertThat(message.errorPopUp.getText(), CoreMatchers.containsString("Duplicate Entry"));
@@ -53,16 +55,16 @@ public class SignUpTest {
     @Test
     public void introducingIncorrectEmail() {
         page.typeEmail("company")
-                .typePaasword("qwe123")
-                .repeatPass("qwe123")
+                .typePassword(data.password)
+                .repeatPass(data.password)
                 .clickRegister();
         Assert.assertThat(message.errorMessage.getText(), CoreMatchers.containsString("Invalid email"));
     }
 
     @Test
     public void introducingDifferentPasswords() {
-        page.typeEmail("company@example.com")
-                .typePaasword("qwe123")
+        page.typeEmail(data.companyEmail)
+                .typePassword(data.password)
                 .repeatPass("23432234")
                 .clickRegister();
         List<String> errorLabels = Arrays.asList("Passwords don't match");
@@ -72,8 +74,8 @@ public class SignUpTest {
     @Test
     public void successfullRegister() {
         page.typeEmail("demo-company+3@securer.io")
-                .typePaasword("qwe123")
-                .repeatPass("qwe123")
+                .typePassword(data.password)
+                .repeatPass(data.password)
                 .clickRegister();
         message.isElementLoaded(dashboard.sideBar);
         Assert.assertThat(driver.getCurrentUrl(),CoreMatchers.equalTo(message.urlCompany +"dashboard"));

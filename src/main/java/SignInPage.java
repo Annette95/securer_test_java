@@ -1,5 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class SignInPage {
 
@@ -9,22 +11,26 @@ public class SignInPage {
             this.driver = driver;
         }
 
-        private By emailField = By.id("email");
-        private By passwordField = By.id("password");
-        private By logInMeClick = By.cssSelector("button[type='submit']");
+        @FindBy (id = "email")
+        private WebElement emailField;
+        @FindBy(id = "password")
+        private WebElement passwordField;
+        @FindBy(css = "button[type='submit']")
+        private WebElement logInMeClick;
+
 
     public SignInPage typeEmail(String email) {
-        driver.findElement(emailField).sendKeys(email);
+        emailField.sendKeys(email);
         return this;
     }
 
     public SignInPage typePassword(String password) {
-        driver.findElement(passwordField).sendKeys(password);
+        passwordField.sendKeys(password);
         return this;
     }
 
     public SignInPage clickLogIn() {
-        driver.findElement(logInMeClick).click();
-        return  this;
+        logInMeClick.click();
+        return this;
     }
 }

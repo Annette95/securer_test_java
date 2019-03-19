@@ -11,19 +11,21 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class SignInTest {
+public class SignInTest_company {
     private WebDriver driver;
     private SignInPage signIn;
     private CheckingAsserts message;
     private DashboardPage dashboard;
+    private DataOfUser data;
 
     @BeforeMethod
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "/Users/developer/Desktop/drivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.get("https://dev-company.securer.io");
-        signIn = new SignInPage(driver);
+        data = new DataOfUser(driver);
+        driver.get(data.urlCompany);
+        signIn = PageFactory.initElements(driver, SignInPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
 
@@ -45,7 +47,7 @@ public class SignInTest {
     @Test
     public void incorrectEmail() {
         signIn.typeEmail("demo.demo.demo.company@mail.ru")
-                .typePassword("qwe123")
+                .typePassword(data.password)
                 .clickLogIn();
         message.isElementLoaded(message.errorPopUp);
         Assert.assertThat(message.errorPopUp.getText(), CoreMatchers.containsString("Invalid credentials, wrong email or password"));
@@ -55,7 +57,7 @@ public class SignInTest {
     @Test
     public void loginAsCompany() {
         signIn.typeEmail("demo-company+3@securer.io")
-                .typePassword("qwe123")
+                .typePassword(data.password)
                 .clickLogIn();
         message.isElementLoaded(dashboard.sideBar);
         Assert.assertThat(driver.getCurrentUrl(), CoreMatchers.equalTo(message.urlCompany + "dashboard"));

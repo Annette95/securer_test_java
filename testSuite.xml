@@ -2,9 +2,12 @@
 <suite name = "TestSuite">
     <test name = "MainFlows">
         <classes>
-            <class name= "SignUpTest" />
-            <class name= "SignInTest"/>
-            <class name="KYC"/>
+            <class name= "SignUpTest_company" />
+            <class name= "SignUpTest_investor" />
+            <class name= "SignInTest_company"/>
+            <class name= "SignInTest_investor"/>
+            <class name="KYC_company"/>
+            <class name="KYC_investor"/>
         </classes>
             </test>
 </suite>

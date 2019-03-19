@@ -34,11 +34,20 @@ public class KYCpage {
     @FindBy(id = "next")
     private WebElement nextButton;
 
+    @FindBy(id = "city")
+    private WebElement cityField;
+    @FindBy(id = "state")
+    private WebElement stateField;
+    @FindBy(id = "phone-input")
+    private WebElement phoneNumberField;
+    @FindBy(css = "input[name='dateOfBirth']")
+    private WebElement dateOfBirthField;
 
-    public KYCpage fillKKYC1stStep(String company, String site,
-                                   String fname, String lname,
-                                   String email, String size, String year,
-                                   String workers) {
+
+    public KYCpage fillKKYC1stStepCompany(String company, String site,
+                                          String fname, String lname,
+                                          String email, String size, String year,
+                                          String workers) {
         companyNameField.sendKeys(company);
         companyWebsiteField.sendKeys(site);
         firstNameField.sendKeys(fname);
@@ -78,4 +87,19 @@ public class KYCpage {
         return this;
     }
 
+    public KYCpage fillKKYC1stStepInvestorIndividual(String fName, String lName,
+                                           String email, String city,
+                                           String state, String phone, String birthday) {
+        firstNameField.sendKeys(fName);
+        lastNameField.sendKeys(lName);
+        emailField.sendKeys(email);
+        cityField.sendKeys(city);
+        stateField.sendKeys(state);
+        phoneNumberField.sendKeys(phone);
+        dateOfBirthField.sendKeys(birthday);
+        return this;
+    }
+
+
 }
+
