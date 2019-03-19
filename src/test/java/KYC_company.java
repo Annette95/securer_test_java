@@ -20,9 +20,9 @@ public class KYC_company {
         System.setProperty("webdriver.chrome.driver", "/Users/developer/Desktop/drivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.get("https://dev-company.securer.io");
-        signIn = PageFactory.initElements(driver, SignInPage.class);
         data = new DataOfUser(driver);
+        driver.get(data.urlCompany);
+        signIn = PageFactory.initElements(driver, SignInPage.class);
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
         kyc = PageFactory.initElements(driver, KYCpage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
