@@ -2,12 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c22450b0-215e-45b0-a1d5-10c1624a26fa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AdminPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApproveKycTest_admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AssetsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AddAsset_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AddTokenize_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApproveAsset_admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GetWhiteListed_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CheckingAsserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CheckingAsserts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataOfUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataOfUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KYCpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KYCpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApproveKycTest_admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApproveKycTest_admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/KYC_company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/KYC_company.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/KYC_investor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/KYC_investor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignInTest_company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignInTest_company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignInTest_investor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignInTest_investor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest_company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTest_company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest_investor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTest_investor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AdminPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdminPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CheckingAsserts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CheckingAsserts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataOfUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataOfUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/KYCpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/KYCpage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ApproveKycTest_admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ApproveKycTest_admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/KYC_company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/KYC_company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/KYC_investor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/KYC_investor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignInTest_company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SignInTest_company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignInTest_investor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SignInTest_investor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignUpTest_company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SignUpTest_company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignUpTest_investor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SignUpTest_investor.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,48 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataOfUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataOfUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-              <folding>
-                <element signature="e#138#139#0" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SignUpPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="22" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignInPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SignInPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="KYC_company.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/KYC_company.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="27" column="74" lean-forward="true" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+            <state relative-caret-position="282">
+              <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AdminPage.java">
+      <file leaf-file-name="KYC_investor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/KYC_investor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="95" column="62" selection-start-line="95" selection-start-column="62" selection-end-line="95" selection-end-column="62" />
+            <state relative-caret-position="430">
+              <caret line="52" column="124" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="52" selection-end-column="124" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,13 +67,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApproveKycTest_admin.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ApproveKycTest_admin.java">
+      <file leaf-file-name="AssetsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AssetsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+            <state relative-caret-position="182">
+              <caret line="54" column="97" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="97" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#103#104#0" expanded="true" />
+                <element signature="e#139#140#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,14 +84,48 @@
       <file leaf-file-name="CheckingAsserts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CheckingAsserts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+            <state relative-caret-position="417">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#463#464#0" expanded="true" />
                 <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#1820#1821#0" expanded="true" />
-                <element signature="e#1875#1876#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddTokenize_Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AddTokenize_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="776">
+              <caret line="61" column="35" lean-forward="true" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetWhiteListed_Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/GetWhiteListed_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DashboardPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DashboardPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,8 +134,23 @@
       <file leaf-file-name="KYCpage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/KYCpage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="197">
+              <caret line="64" column="73" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddAsset_Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AddAsset_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="68" column="40" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,6 +172,7 @@
       <find>format</find>
       <find>driver</find>
       <find>fra</find>
+      <find>token</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,31 +188,36 @@
         <option value="$PROJECT_DIR$/src/test/java/TestSuite.java" />
         <option value="$PROJECT_DIR$/jkhj.fxml" />
         <option value="$PROJECT_DIR$/src/test/java/SignInTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DashboardPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/KYC.java" />
         <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SignUpTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/KYCpage.java" />
         <option value="$PROJECT_DIR$/testSuite.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/CheckingAsserts.java" />
         <option value="$PROJECT_DIR$/src/main/java/SignInPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SignInTest_company.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SignInTest_investor.java" />
         <option value="$PROJECT_DIR$/src/main/java/SignUpPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SignInTest_investor.java" />
         <option value="$PROJECT_DIR$/src/test/java/SignUpTest_company.java" />
         <option value="$PROJECT_DIR$/src/test/java/SignUpTest_investor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SignInTest_company.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataOfUser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/KYC_company.java" />
-        <option value="$PROJECT_DIR$/src/test/java/KYC_investor.java" />
         <option value="$PROJECT_DIR$/src/main/java/AdminPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ApproveKycTest_admin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ApproveAsset_admin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AddAsset_Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/KYCpage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/KYC_company.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CheckingAsserts.java" />
+        <option value="$PROJECT_DIR$/src/test/java/KYC_investor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AddTokenize_Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AssetsPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DashboardPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GetWhiteListed_Test.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1924" />
-    <option name="y" value="23" />
+    <option name="x" value="-1637" />
+    <option name="y" value="67" />
     <option name="width" value="1581" />
     <option name="height" value="965" />
   </component>
@@ -184,9 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,6 +274,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ApproveKycTest_admin.adminApprovesKYCofCompany">
+  <component name="RunManager" selected="TestNG.GetWhiteListed_Test.getWhiteListedClick">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -274,14 +317,83 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AddAsset_Test.fillKycAndSubmit" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SecurerTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddAsset_Test" />
+      <option name="METHOD_NAME" value="fillKycAndSubmit" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="AddTokenize_Test.addingTokenization" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SecurerTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddTokenize_Test" />
+      <option name="METHOD_NAME" value="addingTokenization" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="ApproveAsset_admin.adminApprovesAsset" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SecurerTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ApproveAsset_admin" />
+      <option name="METHOD_NAME" value="adminApprovesAsset" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="ApproveKycTest_admin.adminApprovesKYCofInvestor" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SecurerTest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ApproveKycTest_admin" />
-      <option name="METHOD_NAME" value="adminApprovesKYCofCompany" />
+      <option name="METHOD_NAME" value="adminApprovesKYCofInvestor" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -297,83 +409,14 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="SignInTest_company" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetWhiteListed_Test.getWhiteListedClick" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SecurerTest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignInTest_company" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="SignInTest_company.emptyForm" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SecurerTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignInTest_company" />
-      <option name="METHOD_NAME" value="emptyForm" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="SignUpTest_company.emptyForm" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SecurerTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTest_company" />
-      <option name="METHOD_NAME" value="emptyForm" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="SignUpTest_investor.emptyForm" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SecurerTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTest_investor" />
-      <option name="METHOD_NAME" value="emptyForm" />
+      <option name="MAIN_CLASS_NAME" value="GetWhiteListed_Test" />
+      <option name="METHOD_NAME" value="getWhiteListedClick" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -412,19 +455,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.SignInTest_company" />
-      <item itemvalue="TestNG.SignInTest_company.emptyForm" />
-      <item itemvalue="TestNG.SignUpTest_company.emptyForm" />
-      <item itemvalue="TestNG.SignUpTest_investor.emptyForm" />
-      <item itemvalue="TestNG.ApproveKycTest_admin.adminApprovesKYCofCompany" />
+      <item itemvalue="TestNG.ApproveKycTest_admin.adminApprovesKYCofInvestor" />
+      <item itemvalue="TestNG.AddAsset_Test.fillKycAndSubmit" />
+      <item itemvalue="TestNG.ApproveAsset_admin.adminApprovesAsset" />
+      <item itemvalue="TestNG.AddTokenize_Test.addingTokenization" />
+      <item itemvalue="TestNG.GetWhiteListed_Test.getWhiteListedClick" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ApproveKycTest_admin.adminApprovesKYCofCompany" />
-        <item itemvalue="TestNG.SignUpTest_investor.emptyForm" />
-        <item itemvalue="TestNG.SignUpTest_company.emptyForm" />
-        <item itemvalue="TestNG.SignInTest_company" />
-        <item itemvalue="TestNG.SignInTest_company.emptyForm" />
+        <item itemvalue="TestNG.GetWhiteListed_Test.getWhiteListedClick" />
+        <item itemvalue="TestNG.AddTokenize_Test.addingTokenization" />
+        <item itemvalue="TestNG.ApproveAsset_admin.adminApprovesAsset" />
+        <item itemvalue="TestNG.AddAsset_Test.fillKycAndSubmit" />
+        <item itemvalue="TestNG.ApproveKycTest_admin.adminApprovesKYCofInvestor" />
       </list>
     </recent_temporary>
   </component>
@@ -442,68 +485,68 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApproveKycTest_admin_adminApprovesKYCofCompany - 2019.03.19 at 15h 40m 38s.xml">
-      <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" configurationId="TestNG" />
+    <history-entry file="AddTokenize_Test_addingTokenization - 2019.03.20 at 16h 29m 19s.xml">
+      <configuration name="AddTokenize_Test.addingTokenization" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ApproveKycTest_admin_adminApprovesKYCofCompany - 2019.03.19 at 15h 42m 45s.xml">
-      <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" configurationId="TestNG" />
+    <history-entry file="AddTokenize_Test_addingTokenization - 2019.03.20 at 16h 29m 58s.xml">
+      <configuration name="AddTokenize_Test.addingTokenization" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ApproveKycTest_admin_adminApprovesKYCofCompany - 2019.03.19 at 15h 43m 58s.xml">
-      <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" configurationId="TestNG" />
+    <history-entry file="AddTokenize_Test_addingTokenization - 2019.03.20 at 16h 30m 19s.xml">
+      <configuration name="AddTokenize_Test.addingTokenization" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ApproveKycTest_admin_adminApprovesKYCofCompany - 2019.03.19 at 15h 48m 09s.xml">
-      <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" configurationId="TestNG" />
+    <history-entry file="AddTokenize_Test_addingTokenization - 2019.03.20 at 16h 36m 35s.xml">
+      <configuration name="AddTokenize_Test.addingTokenization" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ApproveKycTest_admin_adminApprovesKYCofCompany - 2019.03.19 at 15h 48m 33s.xml">
-      <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" configurationId="TestNG" />
+    <history-entry file="AddTokenize_Test_addingTokenization - 2019.03.20 at 16h 36m 54s.xml">
+      <configuration name="AddTokenize_Test.addingTokenization" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ApproveKycTest_admin_adminApprovesKYCofCompany - 2019.03.19 at 15h 52m 50s.xml">
-      <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" configurationId="TestNG" />
+    <history-entry file="AddTokenize_Test_addingTokenization - 2019.03.20 at 16h 37m 15s.xml">
+      <configuration name="AddTokenize_Test.addingTokenization" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ApproveKycTest_admin_adminApprovesKYCofCompany - 2019.03.19 at 15h 53m 05s.xml">
-      <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" configurationId="TestNG" />
+    <history-entry file="GetWhiteListed_Test_getWhiteListedClick - 2019.03.20 at 17h 04m 13s.xml">
+      <configuration name="GetWhiteListed_Test.getWhiteListedClick" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ApproveKycTest_admin_adminApprovesKYCofCompany - 2019.03.19 at 15h 53m 20s.xml">
-      <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" configurationId="TestNG" />
+    <history-entry file="GetWhiteListed_Test_getWhiteListedClick - 2019.03.20 at 17h 04m 33s.xml">
+      <configuration name="GetWhiteListed_Test.getWhiteListedClick" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ApproveKycTest_admin_adminApprovesKYCofCompany - 2019.03.19 at 17h 37m 07s.xml">
-      <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" configurationId="TestNG" />
+    <history-entry file="GetWhiteListed_Test_getWhiteListedClick - 2019.03.20 at 17h 07m 23s.xml">
+      <configuration name="GetWhiteListed_Test.getWhiteListedClick" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ApproveKycTest_admin_adminApprovesKYCofCompany - 2019.03.19 at 17h 38m 03s.xml">
-      <configuration name="ApproveKycTest_admin.adminApprovesKYCofCompany" configurationId="TestNG" />
+    <history-entry file="GetWhiteListed_Test_getWhiteListedClick - 2019.03.20 at 17h 08m 49s.xml">
+      <configuration name="GetWhiteListed_Test.getWhiteListedClick" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1924" y="23" width="1581" height="965" extended-state="0" />
+    <frame x="-1637" y="67" width="1581" height="965" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32373273" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32258064" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32718894" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.28341013" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.2845771" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.24477611" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.23066926" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32949308" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.23326835" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3986175" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32949308" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -511,7 +554,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="38" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -571,50 +614,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SignUpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SignUpPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -678,61 +677,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jkhj.fxml" />
     <entry file="file://$PROJECT_DIR$/src/test/java/TestSuite.java" />
-    <entry file="file://$PROJECT_DIR$/target/test-classes/KYC.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/KYC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataForTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignInTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DataOfUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/KYC.class" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/scc.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/KYC.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataForTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/SignInTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataOfUser.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
@@ -747,88 +698,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignInTest_company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignInTest_investor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/imageHelpers/AdminPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AdminPA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DashboardPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataOfUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/KYC_investor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTest_investor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/imageHelpers/AdminPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/AdminPA.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/org/openqa/selenium/WebDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -843,27 +715,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KYCpage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTest_investor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SignUpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SignInPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        <state relative-caret-position="424">
+          <caret line="80" column="75" selection-start-line="80" selection-start-column="75" selection-end-line="80" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -872,18 +727,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SignUpTest_company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="80" column="104" lean-forward="true" selection-start-line="79" selection-start-column="8" selection-end-line="80" selection-end-column="104" />
+        <state relative-caret-position="387">
+          <caret line="80" column="74" selection-start-line="80" selection-start-column="74" selection-end-line="80" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/KYC_company.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SignInTest_company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="27" column="74" lean-forward="true" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+        <state relative-caret-position="387">
+          <caret line="62" column="75" selection-start-line="62" selection-start-column="75" selection-end-line="62" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SignInTest_investor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataOfUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SignInPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SignUpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddAsset_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="68" column="40" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -892,22 +794,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CheckingAsserts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        <state relative-caret-position="417">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#463#464#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AdminPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/KYC_company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="95" column="62" selection-start-line="95" selection-start-column="62" selection-end-line="95" selection-end-column="62" />
+        <state relative-caret-position="282">
+          <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ApproveAsset_admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KYCpage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="64" column="73" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -916,8 +836,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ApproveKycTest_admin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        <state relative-caret-position="273">
+          <caret line="29" column="21" selection-start-line="29" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AdminPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/KYC_investor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="52" column="124" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="52" selection-end-column="124" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AssetsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="54" column="97" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DashboardPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddTokenize_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="61" column="35" lean-forward="true" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GetWhiteListed_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

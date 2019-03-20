@@ -3,54 +3,54 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class KYC_investor {
+public class GetWhiteListed_Test {
     public WebDriver driver;
     private SignInPage signIn;
     public DashboardPage dashboard;
-    private KYCpage kyc;
     private CheckingAsserts message;
+    public AssetsPage asset;
     private DataOfUser data;
+
+    String assetName = "Test";
 
     @BeforeMethod
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "/Users/developer/Desktop/drivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
         data = new DataOfUser(driver);
         driver.get(data.urlInvestor);
         signIn = PageFactory.initElements(driver, SignInPage.class);
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
-        kyc = PageFactory.initElements(driver, KYCpage.class);
+        asset = PageFactory.initElements(driver, AssetsPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
-        signIn.typeEmail("demo-investor+876064128@securer.io")
+        signIn.typeEmail(data.investorEmail)
                 .typePassword(data.password)
                 .clickLogIn();
-        dashboard.clickProfile();
 
     }
 
-    @AfterMethod
-    public void closeDriver() {
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void closeDriver() {
+//        driver.quit();
+//    }
 
     @Test
-    public void FillKYCFORM() {
-        kyc.fillKKYC1stStepInvestorIndividual("Anna","Anna",
-                "canavinanna@gmail.com","Belgium",
-                "Belgium","+37378081512","12/24/1900");
-        kyc.selectOption("country", "Belgium");
-        kyc.clickNext();
-        kyc.uploadFile("passport", "kity.jpg");
-        kyc.uploadFile("selfie", "kity.jpg");
-        kyc.clickNext();
-        kyc.clickNext();
-        message.isElementLoaded(message.successfulPopuP);
-        Assert.assertThat(message.successfulPopuP.getText(),CoreMatchers.containsString("KYC was successfully submitted!"));
-    }
+    public void getWhiteListedClick() {
+        dashboard.clickMarkets();
+        dashboard.clickAssets();
+        asset.clickOnAsset("New York Sunrise Tower");
+//        asset.submitGetWhiteListed();
+//        asset.clickYes();
+//        message.isElementLoaded(message.successfulPopuP);
+//        Assert.assertThat(message.successfulPopuP.getText(),CoreMatchers.containsString("Request was send successfully"));
 
+
+    }
 }

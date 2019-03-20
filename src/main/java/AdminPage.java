@@ -39,6 +39,8 @@ public class AdminPage {
     @FindBy(className = "close-button")
     private WebElement closeButton;
 
+    @FindBy(xpath = "//*[contains(text(), 'Next')]")
+    public WebElement nextButton;
 
     public AdminPage companiesClick() {
         companiesLink.click();
@@ -91,9 +93,22 @@ public class AdminPage {
         return this;
     }
 
-    public WebElement kycStatusIsVisible(String kycStatus) {
-        String kycOfUser = String.format("div[aria-label='%s']", kycStatus);
-        return  By.cssSelector(kycOfUser).findElement(driver);
+    public WebElement statusIsVisible(String status) {
+        String statusOfUser = String.format("div[aria-label='%s']", status);
+        return  By.cssSelector(statusOfUser).findElement(driver);
     }
+
+    public AdminPage clickNext(){
+        nextButton.click();
+        return this;
+    }
+
+    public AdminPage clickAssetDetails(String assetDetails) {
+        String assetOfUser = String.format("button[value='%s']", assetDetails);
+        driver.findElement(By.cssSelector(assetOfUser)).click();
+        return this;
+    }
+
+
 
 }

@@ -3,16 +3,18 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class KYC_company {
+public class AddTokenize_Test {
     public WebDriver driver;
     private SignInPage signIn;
     public DashboardPage dashboard;
-    private KYCpage kyc;
     private CheckingAsserts message;
+    public AssetsPage asset;
     private DataOfUser data;
 
     @BeforeMethod
@@ -24,12 +26,12 @@ public class KYC_company {
         driver.get(data.urlCompany);
         signIn = PageFactory.initElements(driver, SignInPage.class);
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
-        kyc = PageFactory.initElements(driver, KYCpage.class);
+        asset = PageFactory.initElements(driver, AssetsPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
-        signIn.typeEmail("demo-company+3@securer.io")
+        signIn.typeEmail(data.companyEmail)
                 .typePassword(data.password)
                 .clickLogIn();
-        dashboard.clickProfile();
+        dashboard.clickAssets();
 
     }
 
@@ -39,28 +41,25 @@ public class KYC_company {
     }
 
     @Test
-    public void FillKYCFORM() {
-        kyc.fillKKYC1stStepCompany(
-                "pharma",
-                "pharma.com",
-                "Anna",
-                "Miller",
-                "canavinanna@gmail.com",
-                "200000",
-                "2000",
-                "12");
-        kyc.selectOption("sector", "Housing");
-        kyc.selectOption("country", "Antarctica");
-        kyc.clickNext();
-        kyc.uploadFile("file_1", "kity.jpg");
-        kyc.uploadFile("file_2", "kity.jpg");
-        kyc.uploadFile("file_3", "kity.jpg");
-        kyc.uploadFile("file_4", "kity.jpg");
-        kyc.uploadFile("file_5", "kity.jpg");
-        kyc.clickNext();
-        kyc.clickNext();
+    public void addingTokenization() {
+        asset.clickOnAsset("Test");
+        asset.clickTokenize();
+        asset.fillTokenizeForm("AutoToken", "AUT", "70", "1", "10000");
+        asset.uploadFile("logo", "kity.jpg");
+        asset.selectOption("isRedeemable", "No");
+        asset.selectOption("fiatCurrency", "USD");
+        asset.selectOption("canIssueNewTokens", "No");
+        asset.clickAddNewPartition();
+        asset.typePatrition("First");
+        asset.clickaSave();
+        asset.clickAddNewPartition();
+        asset.typePatrition("Second");
+        asset.clickaSave();
+        asset.clickAddNewPartition();
+        asset.typePatrition("Third");
+        asset.clickaSave();
+        asset.submitTokenization();
         message.isElementLoaded(message.successfulPopuP);
-        Assert.assertThat(message.successfulPopuP.getText(),CoreMatchers.containsString("KYC was successfully submitted!"));
+        Assert.assertThat(message.successfulPopuP.getText(),CoreMatchers.containsString("Asset was successfully tokenized"));
     }
-
 }

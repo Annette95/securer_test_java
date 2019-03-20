@@ -5,7 +5,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
@@ -33,7 +36,7 @@ public class ApproveKycTest_admin {
         signIn.typeEmail(data.adminEmail)
                 .typePassword(data.password)
                 .clickLogIn();
-        admin.companiesClick();
+
 
     }
 
@@ -44,17 +47,41 @@ public class ApproveKycTest_admin {
 
     @Test
     public void adminApprovesKYCofCompany() {
-//        admin.clickKYC("demo-company+934547680@securer.io");
-//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", admin.approveButton);
-//        admin.clickApprove();
-//        admin.clickYes();
-//        admin.clickNo();
-        WebElement kycStatusOf = admin.kycStatusIsVisible("company5@getnada.com");
+        admin.companiesClick();
+        admin.statusIsVisible(data.companyEmail);
+        admin.clickKYC(data.companyEmail);
+        try {
+            admin.clickApprove();
+        } catch (org.openqa.selenium.StaleElementReferenceException ex) {
+            admin.clickApprove();
+        }
+        admin.clickYes();
+        admin.statusIsVisible(data.companyEmail);
+        driver.navigate().refresh();
+        WebElement kycStatusOf = admin.statusIsVisible(data.companyEmail);
         message.isElementLoaded(kycStatusOf);
-        Assert.assertThat(kycStatusOf.getText(),CoreMatchers.equalTo("Approved"));
-//        message.isElementLoaded((WebElement) admin.kycStatusIsVisible("demo-company+597059519@securer.io"));
-//        Assert.assertThat(admin.kycStatusIsVisible("demo-company+597059519@securer.io"), CoreMatchers.containsString("Submitted"));
+        Assert.assertThat(kycStatusOf.getText(), CoreMatchers.equalTo("Approved"));
     }
+
+    @Test
+    public void adminApprovesKYCofInvestor() {
+        admin.investorClick();
+        admin.statusIsVisible("investor14@banit.me");
+        admin.clickKYC("investor14@banit.me");
+        try {
+            admin.clickApprove();
+        } catch (org.openqa.selenium.StaleElementReferenceException ex) {
+            admin.clickApprove();
+        }
+        admin.clickApprove();
+        admin.clickNo();
+        admin.statusIsVisible("investor14@banit.me");
+        driver.navigate().refresh();
+        WebElement kycStatusOf = admin.statusIsVisible("investor14@banit.me");
+        message.isElementLoaded(kycStatusOf);
+        Assert.assertThat(kycStatusOf.getText(), CoreMatchers.equalTo("Approved"));
+    }
+
 }
 
 

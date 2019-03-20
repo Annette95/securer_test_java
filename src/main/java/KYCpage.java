@@ -60,21 +60,14 @@ public class KYCpage {
         return this;
     }
 
-    public KYCpage selectSector(String listName, String sector) {
-        String listLocator = String.format("select[name='sector']", listName);
-        String optionLocator = String.format("//*[contains(text(), '%s')]", sector);
+    public KYCpage selectOption(String listName, String option) {
+        String listLocator = String.format("select[name='%s']", listName);
+        String optionLocator = String.format("//*[contains(text(), '%s')]", option);
         driver.findElement(By.cssSelector(listLocator)).click();
         driver.findElement(By.xpath(optionLocator)).click();
         return this;
     }
 
-    public KYCpage selectCountry(String listName, String country) {
-        String listLocator = String.format("select[name='country']", listName);
-        String optionLocator = String.format("//*[contains(text(), '%s')]", country);
-        driver.findElement(By.cssSelector(listLocator)).click();
-        driver.findElement(By.xpath(optionLocator)).click();
-        return this;
-    }
 
     public KYCpage clickNext() {
         nextButton.click();

@@ -78,7 +78,7 @@ public class SignUpTest_company {
                 .repeatPass(data.password)
                 .clickRegister();
         message.isElementLoaded(dashboard.sideBar);
-        Assert.assertThat(driver.getCurrentUrl(),CoreMatchers.equalTo(message.urlCompany +"dashboard"));
+        Assert.assertThat(driver.getCurrentUrl(),CoreMatchers.equalTo(data.urlCompany +"dashboard"));
     }
 }
 

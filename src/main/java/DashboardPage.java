@@ -22,6 +22,8 @@ public class DashboardPage {
     @FindBy(css = "div.scrollbar-container.sidebar-content.ps")
     public WebElement sideBar;
 
+    @FindBy(xpath = "//*[contains(@class,'menu-item-text d-inline') and contains(text(), 'Markets')]")
+    private WebElement marketsLink;
 
 
     public DashboardPage clickAssets () {
@@ -37,6 +39,11 @@ public class DashboardPage {
 
     public DashboardPage clickDashboard () {
         dashboardLink.click();
+        return this;
+    }
+
+    public DashboardPage clickMarkets(){
+        marketsLink.click();
         return this;
     }
 

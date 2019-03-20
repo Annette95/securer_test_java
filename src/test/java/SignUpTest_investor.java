@@ -78,6 +78,6 @@ public class SignUpTest_investor {
                 .repeatPass(data.password)
                 .clickRegister();
         message.isElementLoaded(dashboard.sideBar);
-        Assert.assertThat(driver.getCurrentUrl(), CoreMatchers.equalTo(message.urlInvestor + "dashboard"));
+        Assert.assertThat(driver.getCurrentUrl(), CoreMatchers.equalTo(data.urlInvestor + "dashboard"));
     }
 }

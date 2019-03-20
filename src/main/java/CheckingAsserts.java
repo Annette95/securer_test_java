@@ -18,9 +18,6 @@ public class CheckingAsserts {
         this.driver = driver;
     }
 
-    String urlCompany = "https://dev-company.securer.io/";
-    String urlInvestor = "https://dev-investor.securer.io/";
-
     @FindBy(css = "div.toastr.animated.rrt-success")
     public WebElement successfulPopuP;
 
@@ -29,6 +26,9 @@ public class CheckingAsserts {
 
     @FindBy(css = "div.invalid-feedback")
     public WebElement errorMessage;
+
+    @FindBy(css = "h6.element-header.text-bold-500")
+    public WebElement pageTitle;
 
     public By errorTexts = By.cssSelector("div.invalid-feedback");
 

@@ -60,7 +60,7 @@ public class SignInTest_investor {
                 .typePassword(data.password)
                 .clickLogIn();
         message.isElementLoaded(dashboard.sideBar);
-        Assert.assertThat(driver.getCurrentUrl(), CoreMatchers.equalTo(message.urlInvestor + "dashboard"));
+        Assert.assertThat(driver.getCurrentUrl(), CoreMatchers.equalTo(data.urlInvestor + "dashboard"));
     }
 
 }
