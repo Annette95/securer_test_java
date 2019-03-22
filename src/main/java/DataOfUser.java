@@ -11,6 +11,9 @@ public class DataOfUser {
     String urlCompany = "https://dev-company.securer.io";
     String urlInvestor = "https://dev-investor.securer.io";
     String urlAdmin = "https://dev-admin.securer.io";
+    String urlCompanyDemo = "https://demo-company.securer.io";
+    String urlInvestorDemo = "https://demo-investor.securer.io";
+    String UrlAdminDemo = "https://demo-admin.securer.io";
     String companyEmail = "company@example.com";
     String investorEmail = "investor@example.com";
     String adminEmail = "admin@example.com";

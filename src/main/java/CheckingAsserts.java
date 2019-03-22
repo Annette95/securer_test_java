@@ -30,6 +30,12 @@ public class CheckingAsserts {
     @FindBy(css = "h6.element-header.text-bold-500")
     public WebElement pageTitle;
 
+    @FindBy(css = "p[aria-label='submitted']")
+    public WebElement submittedGetWl;
+
+    @FindBy(xpath = "//p[@class = 'mb-3']")
+    public WebElement messageInvest;
+
     public By errorTexts = By.cssSelector("div.invalid-feedback");
 
     private String errorByText = "//*[text()='%s']";
@@ -59,6 +65,12 @@ public class CheckingAsserts {
 
     public String[] getErrorLabels() {
         return (String[]) getErrors().toArray();
+    }
+
+    public CheckingAsserts investmentInformation(String tokens,String amount,String currency){
+        String dsoDetails = String.format("//p[@class = 'mb-3' and contains(text(),'You will buy %s tokens with %s %s')]", tokens,amount,currency);
+        driver.findElement(By.xpath(dsoDetails)).isDisplayed();
+        return this;
     }
 
 }

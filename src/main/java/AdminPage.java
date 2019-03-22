@@ -109,6 +109,17 @@ public class AdminPage {
         return this;
     }
 
+    public AdminPage clickDSODetails(String dso){
+        String dsoDetails = String.format("button[aria-label='%s']", dso);
+        driver.findElement(By.cssSelector(dsoDetails)).click();
+        return this;
+    }
+
+    public WebElement statusIsVisibleForDSO(String status) {
+        String statusOfUser = String.format("div[aria-label='%s-status']", status);
+        return  By.cssSelector(statusOfUser).findElement(driver);
+    }
+
 
 
 }

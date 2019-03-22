@@ -2,12 +2,21 @@
 <suite name = "TestSuite">
     <test name = "MainFlows">
         <classes>
-            <class name= "SignUpTest_company" />
-            <class name= "SignUpTest_investor" />
-            <class name= "SignInTest_company"/>
-            <class name= "SignInTest_investor"/>
-            <class name="KYC_company"/>
-            <class name="KYC_investor"/>
+            <class name= "SignUp_company_test" />
+            <class name= "SignUp_investor_test" />
+            <class name= "SignIn_company_test"/>
+            <class name= "SignIn_investor_test"/>
+            <class name="KYCSubmit_company_test"/>
+            <class name="KYCSubmit_investor_test"/>
+            <class name="ApproveKyc_admin_test"/>
+            <class name="AddAsset_company_test"/>
+            <class name="ApproveAsset_admin_test"/>
+            <class name="AddTokenize_company_test"/>
+            <class name="GetWhiteListed_investor_test"/>
+            <class name="ApprovingGetWL_test"/>
+            <class name="AddDSO_company_test"/>
+            <class name="ApproveDSO_admin_test"/>
+            <class name="InvestTokens_investor_test"/>
         </classes>
             </test>
 </suite>

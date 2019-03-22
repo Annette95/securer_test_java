@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.*;
 
-public class ApproveKycTest_admin {
+public class ApproveKyc_admin_test {
     public WebDriver driver;
     private SignInPage signIn;
     private DataOfUser data;
@@ -74,7 +74,7 @@ public class ApproveKycTest_admin {
             admin.clickApprove();
         }
         admin.clickApprove();
-        admin.clickNo();
+        admin.clickYes();
         admin.statusIsVisible("investor14@banit.me");
         driver.navigate().refresh();
         WebElement kycStatusOf = admin.statusIsVisible("investor14@banit.me");

@@ -6,14 +6,14 @@ public class DashboardPage {
 
     public WebDriver driver;
 
-    public DashboardPage (WebDriver driver) {
+    public DashboardPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    @FindBy (xpath = "//a[@href='/assets']")
+    @FindBy(xpath = "//a[@href='/assets']")
     public WebElement assetsLink;
 
-    @FindBy(xpath ="//a[@href='/profile']" )
+    @FindBy(xpath = "//a[@href='/profile']")
     public WebElement profileLink;
 
     @FindBy(linkText = "//a[@href='/dashboard']")
@@ -22,28 +22,36 @@ public class DashboardPage {
     @FindBy(css = "div.scrollbar-container.sidebar-content.ps")
     public WebElement sideBar;
 
+    @FindBy(xpath = "//a[@href='/dso']")
+    public WebElement dsoLink;
+
     @FindBy(xpath = "//*[contains(@class,'menu-item-text d-inline') and contains(text(), 'Markets')]")
     private WebElement marketsLink;
 
 
-    public DashboardPage clickAssets () {
+    public DashboardPage clickAssets() {
         assetsLink.click();
         return this;
     }
 
 
-    public DashboardPage clickProfile () {
+    public DashboardPage clickProfile() {
         profileLink.click();
         return this;
     }
 
-    public DashboardPage clickDashboard () {
+    public DashboardPage clickDashboard() {
         dashboardLink.click();
         return this;
     }
 
-    public DashboardPage clickMarkets(){
+    public DashboardPage clickMarkets() {
         marketsLink.click();
+        return this;
+    }
+
+    public DashboardPage clickDSO(){
+        dsoLink.click();
         return this;
     }
 

@@ -1,20 +1,20 @@
+import com.sun.org.apache.xpath.internal.operations.String;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class AddAsset_Test {
+public class AddDSO_company_test {
     public WebDriver driver;
     private SignInPage signIn;
     public DashboardPage dashboard;
     private CheckingAsserts message;
-    public AssetsPage asset;
+    public DSOPage dso;
     private DataOfUser data;
 
     @BeforeMethod
@@ -26,12 +26,12 @@ public class AddAsset_Test {
         driver.get(data.urlCompany);
         signIn = PageFactory.initElements(driver, SignInPage.class);
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
-        asset = PageFactory.initElements(driver, AssetsPage.class);
+        dso = PageFactory.initElements(driver, DSOPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
         signIn.typeEmail(data.companyEmail)
                 .typePassword(data.password)
                 .clickLogIn();
-        dashboard.clickAssets();
+        dashboard.clickDSO();
 
     }
 
@@ -41,31 +41,27 @@ public class AddAsset_Test {
 //    }
 
     @Test
-    public void fillKycAndSubmit() {
-        asset.clickAddAsset();
-        asset.selectOption("country", "France");
-        asset.fillEntityDetails("AutoTest", "12", "OOO", "12", "Selenium", "Paris");
-        asset.clickNext();
-        asset.selectOption("isPublic", "Yes");
-        asset.selectOption("assetType", "Shares");
-        asset.introduceDescription("Sed ut perspiciatis unde omnis iste natus error ");
-        asset.introduceDetailedDescription(data.longDescription);
-        asset.uploadFile("image", "kity.jpg");
-        asset.clickNext();
-        asset.clickAddNewDoc();
-        asset.typeTitle("licence");
-        asset.uploadDoc("file", "kity.jpg");
-        asset.clickaSave();
-        asset.clickAddNewDoc();
-        asset.typeTitle("buletin");
-        asset.uploadDoc("file", "kity.jpg");
-        asset.clickaSave();
-        asset.clickDelete("buletin");
-        asset.clickNext();
-        asset.clickNext();
+    public void addDSOAndSubmit() throws InterruptedException {
+        Thread.sleep(1000);
+        dso.clickAddDSO();
+        dso.selectOption("assetId", "Test");
+        dso.clickAddPartition();
+        dso.typePartition("fdfdsf");
+        dso.clickSelectPartition();
+        dso.selectOption("partitionId", "First");
+        dso.clickNext();
+        dso.fillDSOForm("03/21/2019\n","12/21/2019\n","1","20000","12","10000");
+        dso.selectOption("tokenCurrency","USD");
+        java.lang.String[] currency = {"EUR\n","USD\n","ETH\n"};
+        dso.typeInvestmentCurrencies(currency);
+        dso.clickNext();
+        dso.clickSubmit();
         message.isElementLoaded(message.successfulPopuP);
-        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Asset was added successfully"));
+        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("DSO was added successfully"));
         message.isElementLoaded(message.pageTitle);
-        Assert.assertThat(message.pageTitle.getText(), CoreMatchers.containsString("ASSETS LIST"));
+        dso.submitDSO("Test");
+        dso.clickYes();
+        message.isElementLoaded(message.successfulPopuP);
+        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("DSO was submitted successfully"));
     }
 }

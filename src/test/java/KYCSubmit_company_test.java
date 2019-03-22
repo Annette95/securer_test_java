@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class KYC_investor {
+public class KYCSubmit_company_test {
     public WebDriver driver;
     private SignInPage signIn;
     public DashboardPage dashboard;
@@ -21,13 +21,13 @@ public class KYC_investor {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         data = new DataOfUser(driver);
-        driver.get(data.urlInvestor);
+        driver.get(data.urlCompany);
         signIn = PageFactory.initElements(driver, SignInPage.class);
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
         kyc = PageFactory.initElements(driver, KYCpage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
-        signIn.typeEmail("demo-investor+876064128@securer.io")
-                .typePassword(data.password)
+        signIn.typeEmail("demo-company+3@securer.io")
+                .typePassword("qwe123")
                 .clickLogIn();
         dashboard.clickProfile();
 
@@ -40,13 +40,24 @@ public class KYC_investor {
 
     @Test
     public void FillKYCFORM() {
-        kyc.fillKKYC1stStepInvestorIndividual("Anna","Anna",
-                "canavinanna@gmail.com","Belgium",
-                "Belgium","+37378081512","12/24/1900");
-        kyc.selectOption("country", "Belgium");
+        kyc.fillKKYC1stStepCompany(
+                "pharma",
+                "pharma.com",
+                "Anna",
+                "Miller",
+                "canavinanna@gmail.com",
+                "200000",
+                "2000",
+                "12");
+        kyc.selectOption("sector", "Housing");
+        kyc.selectOption("country", "Antarctica");
         kyc.clickNext();
-        kyc.uploadFile("passport", "kity.jpg");
-        kyc.uploadFile("selfie", "kity.jpg");
+        kyc.uploadFile("file_1", "kity.jpg");
+        kyc.uploadFile("file_2", "kity.jpg");
+        kyc.uploadFile("file_3", "kity.jpg");
+        kyc.uploadFile("file_4", "kity.jpg");
+        kyc.uploadFile("file_5", "kity.jpg");
+        kyc.uploadFile("file_6", "kity.jpg");
         kyc.clickNext();
         kyc.clickNext();
         message.isElementLoaded(message.successfulPopuP);

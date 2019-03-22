@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class AddTokenize_Test {
+public class AddTokenize_company_test {
     public WebDriver driver;
     private SignInPage signIn;
     public DashboardPage dashboard;

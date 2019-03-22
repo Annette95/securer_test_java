@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class SignUpTest_investor {
+public class SignUp_investor_test {
     private WebDriver driver;
     private SignUpPage page;
     private CheckingAsserts message;

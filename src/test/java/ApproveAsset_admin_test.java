@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class ApproveAsset_admin {
+public class ApproveAsset_admin_test {
     public WebDriver driver;
     private SignInPage signIn;
     private DataOfUser data;
