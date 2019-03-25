@@ -1,3 +1,4 @@
+import com.sun.xml.internal.ws.model.AbstractSEIModelImpl;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -8,15 +9,13 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class GetWhiteListed_investor_test {
+public class BurnTokes_company_test {
     public WebDriver driver;
     private SignInPage signIn;
     public DashboardPage dashboard;
     private CheckingAsserts message;
     public AssetsPage asset;
     private DataOfUser data;
-
-    String assetName = "Test";
 
     @BeforeMethod
     public void setUp() {
@@ -25,14 +24,16 @@ public class GetWhiteListed_investor_test {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(data.urlInvestor);
+        driver.get(data.urlCompany);
         signIn = PageFactory.initElements(driver, SignInPage.class);
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
         asset = PageFactory.initElements(driver, AssetsPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
-        signIn.typeEmail(data.investorEmail)
+        signIn.typeEmail(data.companyEmail)
                 .typePassword(data.password)
                 .clickLogIn();
+        dashboard.clickAssets();
+
     }
 
 //    @AfterMethod
@@ -41,15 +42,18 @@ public class GetWhiteListed_investor_test {
 //    }
 
     @Test
-    public void getWhiteListedClick() {
-        dashboard.clickProfile();
-        driver.get("https://dev-investor.securer.io/assets");
-        asset.clickOnAsset("Joan Miro Amaze Token");
-        asset.submitGetWhiteListed();
-        asset.clickYes();
+    public void burnTokens() throws InterruptedException {
+        asset.clickOnAsset("Crowne Plaza Shanghai Parking Lot");
+        asset.clickToAction("ion.leahu+2@titanium-soft.com");
+        Thread.sleep(1000);
+        asset.choosePartition("partitions-partition-3");
+        asset.isPartitionSelected("partitions-partition-3");
+        asset.inputAmount("10");
+        asset.clickBurnTokens();
+        asset.uploadFile("file", "kity.jpg");
+        asset.inputComment("QA");
+        asset.clickSubmitBurn();
         message.isElementLoaded(message.successfulPopuP);
-        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Request was send successfully"));
-        Assert.assertThat(message.submittedGetWl.getText(), CoreMatchers.containsString("Waiting for approval"));
-
+        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Burn was successfull"));
     }
 }

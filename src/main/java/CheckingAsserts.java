@@ -36,6 +36,9 @@ public class CheckingAsserts {
     @FindBy(xpath = "//p[@class = 'mb-3']")
     public WebElement messageInvest;
 
+    @FindBy(css = "button[aria-label='toast']")
+    private WebElement closePopUpButton;
+
     public By errorTexts = By.cssSelector("div.invalid-feedback");
 
     private String errorByText = "//*[text()='%s']";
@@ -71,6 +74,12 @@ public class CheckingAsserts {
         String dsoDetails = String.format("//p[@class = 'mb-3' and contains(text(),'You will buy %s tokens with %s %s')]", tokens,amount,currency);
         driver.findElement(By.xpath(dsoDetails)).isDisplayed();
         return this;
+    }
+
+    public CheckingAsserts clickClosePopUp(){
+        closePopUpButton.click();
+        return this;
+
     }
 
 }

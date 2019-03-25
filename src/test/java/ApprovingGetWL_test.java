@@ -17,10 +17,11 @@ public class ApprovingGetWL_test {
 
     @BeforeMethod
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/Users/developer/Desktop/drivers/chromedriver");
+        data = new DataOfUser(driver);
+        System.setProperty("webdriver.chrome.driver", data.webDriverPath);
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        data = new DataOfUser(driver);
+        driver.manage().window().maximize();
         driver.get(data.urlCompany);
         signIn = PageFactory.initElements(driver, SignInPage.class);
         dashboard = PageFactory.initElements(driver, DashboardPage.class);

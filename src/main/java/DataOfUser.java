@@ -8,6 +8,7 @@ public class DataOfUser {
         this.driver = driver;
     }
 
+    String webDriverPath = "/Users/developer/Desktop/drivers/chromedriver";
     String urlCompany = "https://dev-company.securer.io";
     String urlInvestor = "https://dev-investor.securer.io";
     String urlAdmin = "https://dev-admin.securer.io";

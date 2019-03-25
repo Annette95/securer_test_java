@@ -21,10 +21,11 @@ public class SignUp_company_test {
 
     @BeforeMethod
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/Users/developer/Desktop/drivers/chromedriver");
+        data = new DataOfUser(driver);
+        System.setProperty("webdriver.chrome.driver", data.webDriverPath);
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        data = new DataOfUser(driver);
+        driver.manage().window().maximize();
         driver.get(data.urlCompany+"/register");
         page = PageFactory.initElements(driver, SignUpPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);

@@ -1,10 +1,7 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-import java.awt.*;
 import java.io.File;
 
 public class AssetsPage {
@@ -97,6 +94,25 @@ public class AssetsPage {
 
     @FindBy(css = "input[name='amount']")
     private WebElement amountField;
+
+    @FindBy(css = "button[aria-label='close-drawer']")
+    public WebElement closeButton;
+
+    @FindBy(css = "svg[aria-label='send']")
+    private WebElement sendTokenButton;
+
+    @FindBy(css = "svg[aria-label='delete']")
+    private WebElement burnTokenButton;
+
+    @FindBy(css = "svg[aria-label='lock']")
+    private WebElement lockButton;
+
+    @FindBy(id = "comment")
+    private WebElement typeComment;
+
+    @FindBy(xpath = "//button[@class = 'mb-0 btn btn-primary']")
+    private WebElement submitBurn;
+
 
     public AssetsPage clickAddAsset() {
         buttonAddAsset.click();
@@ -255,5 +271,60 @@ public class AssetsPage {
         return this;
     }
 
+    public AssetsPage clickToSeeRequestInvest(String request) {
+        String requestDetails = String.format("svg[aria-label='%s-activity']", request);
+        driver.findElement(By.cssSelector(requestDetails)).click();
+        return this;
+    }
+
+    public AssetsPage clickClose(){
+        closeButton.click();
+        return this;
+    }
+
+    public AssetsPage clickToAction(String action) {
+        String actionDetails = String.format("svg[aria-label='%s']", action);
+        driver.findElement(By.cssSelector(actionDetails)).click();
+        return this;
+    }
+
+    public AssetsPage choosePartition(String part) {
+        String radioPart = String.format("label[for='%s']", part);
+        driver.findElement(By.cssSelector(radioPart)).click();
+        return this;
+    }
+
+    public AssetsPage isPartitionSelected(String part) {
+        String radioPart = String.format("label[for='%s']", part);
+        driver.findElement(By.cssSelector(radioPart)).isSelected();
+        return this;
+    }
+
+    public AssetsPage clickSendTokens(){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(sendTokenButton).click().perform();
+        return this;
+    }
+
+    public AssetsPage clickBurnTokens(){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(burnTokenButton).click().perform();
+        return this;
+    }
+
+    public AssetsPage clickLockTokens(){
+        lockButton.click();
+        return this;
+    }
+
+    public AssetsPage inputComment(String com){
+        typeComment.sendKeys(com);
+        return this;
+    }
+
+    public AssetsPage clickSubmitBurn() {
+        submitBurn.click();
+        return this;
+    }
 
 }

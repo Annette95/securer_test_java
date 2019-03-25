@@ -24,11 +24,11 @@ public class ApproveKyc_admin_test {
 
     @BeforeMethod
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/Users/developer/Desktop/drivers/chromedriver");
+        data = new DataOfUser(driver);
+        System.setProperty("webdriver.chrome.driver", data.webDriverPath);
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        data = new DataOfUser(driver);
         driver.get(data.urlAdmin);
         signIn = PageFactory.initElements(driver, SignInPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
