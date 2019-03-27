@@ -27,6 +27,9 @@ public class CheckingAsserts {
     @FindBy(css = "div.invalid-feedback")
     public WebElement errorMessage;
 
+    @FindBy(css = "div.position-absolute.invalid-feedback.d-block")
+    public WebElement errorMessageDate;
+
     @FindBy(css = "h6.element-header.text-bold-500")
     public WebElement pageTitle;
 

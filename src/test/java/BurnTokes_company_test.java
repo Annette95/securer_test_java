@@ -1,4 +1,3 @@
-import com.sun.xml.internal.ws.model.AbstractSEIModelImpl;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;

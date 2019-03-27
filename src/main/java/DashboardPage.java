@@ -28,6 +28,12 @@ public class DashboardPage {
     @FindBy(xpath = "//*[contains(@class,'menu-item-text d-inline') and contains(text(), 'Markets')]")
     private WebElement marketsLink;
 
+    @FindBy(xpath = "//a[@href='/dividends']")
+    public WebElement dividendsLink;
+
+    @FindBy(xpath = "//a[@href='/votings']")
+    public WebElement votingsLink;
+
 
     public DashboardPage clickAssets() {
         assetsLink.click();
@@ -55,5 +61,14 @@ public class DashboardPage {
         return this;
     }
 
+    public DashboardPage clickDividends(){
+        dividendsLink.click();
+        return this;
+    }
+
+    public DashboardPage clickVotings(){
+        votingsLink.click();
+        return this;
+    }
 }
 

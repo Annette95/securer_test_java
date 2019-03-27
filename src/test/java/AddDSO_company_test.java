@@ -1,4 +1,3 @@
-import com.sun.org.apache.xpath.internal.operations.String;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
