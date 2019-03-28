@@ -19,7 +19,7 @@ public class SignUpPage {
     private WebElement passwordField;
     @FindBy (id = "passwordConfirm")
     private WebElement repeatPassword;
-    @FindBy (xpath= "//*[contains(text(), 'Register now')]")
+    @FindBy (xpath= "//div[@class = 'button-content'and contains(text(), 'Register')]")
     private WebElement register;
 
 

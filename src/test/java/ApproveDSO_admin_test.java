@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -30,25 +31,22 @@ public class ApproveDSO_admin_test {
         signIn.typeEmail(data.adminEmail)
                 .typePassword(data.password)
                 .clickLogIn();
-
-
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
     public void adminApprovesDSO() {
-        String dsoName = "Test";
         admin.dsoClick();
-        admin.clickDSODetails(dsoName);
+        admin.clickDSODetails(data.assetName);
         admin.clickApprove();
         admin.clickYes();
-        admin.statusIsVisibleForDSO(dsoName);
+        admin.statusIsVisibleForDSO(data.assetName);
         driver.navigate().refresh();
-        WebElement dsoStatusOf = admin.statusIsVisible(dsoName);
+        WebElement dsoStatusOf = admin.statusIsVisible(data.assetName);
         message.isElementLoaded(dsoStatusOf);
         Assert.assertThat(dsoStatusOf.getText(), CoreMatchers.equalTo("Approved"));
 

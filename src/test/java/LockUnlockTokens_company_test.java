@@ -3,12 +3,14 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class BurnTokes_company_test {
+public class LockUnlockTokens_company_test {
+
     public WebDriver driver;
     private SignInPage signIn;
     public DashboardPage dashboard;
@@ -35,24 +37,28 @@ public class BurnTokes_company_test {
 
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
-    public void burnTokens() throws InterruptedException {
-        asset.clickOnAsset("Crowne Plaza Shanghai Parking Lot");
-        asset.clickToAction("ion.leahu+2@titanium-soft.com");
+    public void lockTokens() throws InterruptedException {
+        asset.clickOnAsset(data.assetName);
         Thread.sleep(1000);
-        asset.choosePartition("partitions-partition-3");
-        asset.isPartitionSelected("partitions-partition-3");
-        asset.inputAmount("10");
-        asset.clickBurnTokens();
-        asset.uploadFile("file", "kity.jpg");
-        asset.inputComment("QA");
-        asset.clickSubmitBurn();
+        asset.clickToAction(data.investorEmail);
+        asset.clickLockUnlockTokens();
         message.isElementLoaded(message.successfulPopuP);
-        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Burn was successfull"));
+        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Investor was locked successfully"));
+    }
+
+    @Test
+    public void unlockTokens() throws InterruptedException {
+        asset.clickOnAsset(data.assetName);
+        Thread.sleep(1000);
+        asset.clickToAction(data.investorEmail);
+        asset.clickLockUnlockTokens();
+        message.isElementLoaded(message.successfulPopuP);
+        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Investor was unlocked successfully"));
     }
 }

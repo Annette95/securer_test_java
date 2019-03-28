@@ -27,7 +27,7 @@ public class KYCSubmit_investor_test {
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
         kyc = PageFactory.initElements(driver, KYCpage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
-        signIn.typeEmail("demo-investor+876064128@securer.io")
+        signIn.typeEmail(data.investorEmail)
                 .typePassword(data.password)
                 .clickLogIn();
         dashboard.clickProfile();
@@ -41,9 +41,12 @@ public class KYCSubmit_investor_test {
 
     @Test
     public void FillKYCFORM() {
-        kyc.fillKKYC1stStepInvestorIndividual("Anna","Anna",
+        kyc.fillKKYC1stStepInvestorIndividual("12/24/1900\n","Anna","Anna",
                 "canavinanna@gmail.com","Belgium",
-                "Belgium","+37378081512","12/24/1900");
+                "Belgium");
+        kyc.selectOption("country", "Belgium");
+        kyc.selectFlag("Moldova");
+        kyc.typePhone("78081512");
         kyc.selectOption("country", "Belgium");
         kyc.clickNext();
         kyc.uploadFile("passport", "kity.jpg");

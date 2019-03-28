@@ -40,9 +40,10 @@ public class ApprovingGetWL_test {
     }
 
     @Test
-    public void approveInvestorKyc() {
-        asset.clickOnAsset("Crowne Plaza Shanghai Parking Lot");
-        asset.clickKYCInvestor("demo-investor+392949170@securer.io");
+    public void approveInvestorKyc() throws InterruptedException {
+        asset.clickOnAsset(data.assetName);
+        Thread.sleep(2000);
+        asset.clickKYCInvestor(data.investorEmail);
         try {
             asset.clickApprove();
         } catch (org.openqa.selenium.StaleElementReferenceException ex) {

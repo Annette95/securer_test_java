@@ -15,10 +15,17 @@ public class DataOfUser {
     String urlCompanyDemo = "https://demo-company.securer.io";
     String urlInvestorDemo = "https://demo-investor.securer.io";
     String UrlAdminDemo = "https://demo-admin.securer.io";
-    String companyEmail = "company@example.com";
-    String investorEmail = "investor@example.com";
+    String companyEmail = "company+3@example.com";
+    String investorEmail = "investor+2@example.com";
     String adminEmail = "admin@example.com";
     String password = "qwe123";
+    String assetName = "AutoTest2";
+    String part1 = "First";
+    String part2 = "Second";
+    String part3 = "Third";
+
+    String companyEmailEx = "company@example.com";
+    String investorEmailEx = "investor@example.com";
 
     String longDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
 

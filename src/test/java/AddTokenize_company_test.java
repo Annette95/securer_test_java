@@ -43,7 +43,7 @@ public class AddTokenize_company_test {
 
     @Test
     public void addingTokenization() {
-        asset.clickOnAsset("Test");
+        asset.clickOnAsset(data.assetName);
         asset.clickTokenize();
         asset.fillTokenizeForm("AutoToken", "AUT", "70", "1", "10000");
         asset.uploadFile("logo", "kity.jpg");
@@ -51,13 +51,13 @@ public class AddTokenize_company_test {
         asset.selectOption("fiatCurrency", "USD");
         asset.selectOption("canIssueNewTokens", "No");
         asset.clickAddNewPartition();
-        asset.typePatrition("First");
+        asset.typePatrition(data.part1);
         asset.clickaSave();
         asset.clickAddNewPartition();
-        asset.typePatrition("Second");
+        asset.typePatrition(data.part2);
         asset.clickaSave();
         asset.clickAddNewPartition();
-        asset.typePatrition("Third");
+        asset.typePatrition(data.part3);
         asset.clickaSave();
         asset.submitTokenization();
         message.isElementLoaded(message.successfulPopuP);

@@ -36,23 +36,23 @@ public class ApproveInvest_company_test {
 
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
     public void approveInvest() throws InterruptedException {
-        asset.clickOnAsset("Crowne Plaza Shanghai Parking Lot");
-        asset.clickToSeeRequestInvest("ion.leahu+2@titanium-soft.com");
+        asset.clickOnAsset(data.assetName);
+        asset.clickToSeeRequestInvest(data.investorEmail);
         message.isElementLoaded(asset.approveButton);
         asset.clickApprove();
         message.isElementLoaded(message.successfulPopuP);
-        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Investment was successfully approved"));
+        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Investment was approved"));
         message.clickClosePopUp();
         Thread.sleep(1000);
         asset.clickClose();
-        asset.clickToAction("ion.leahu+2@titanium-soft.com");
+        asset.clickToAction(data.investorEmail);
         asset.choosePartition("partitions-partition-3");
         asset.isPartitionSelected("partitions-partition-3");
         asset.inputAmount("1000");

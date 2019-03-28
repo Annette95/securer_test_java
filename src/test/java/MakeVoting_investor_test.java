@@ -3,6 +3,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -28,31 +29,29 @@ public class MakeVoting_investor_test {
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
         voting = PageFactory.initElements(driver, VotingPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
-        signIn.typeEmail(data.investorEmail)
+        signIn.typeEmail(data.investorEmailEx)
                 .typePassword(data.password)
                 .clickLogIn();
         dashboard.clickVotings();
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
-    public void addDividendAndSubmit() throws InterruptedException {
+    public void submitVote() throws InterruptedException {
+        String newVoting = "28/03 - voting_1";
         message.isElementLoaded(message.pageTitle);
         Assert.assertThat(message.pageTitle.getText(), CoreMatchers.containsString("VOTING EVENTS"));
-        voting.findVoting("voting 22/03 - 9:35");
-        voting.votingIsVisibleAndClick("voting 22/03 - 9:35");
+        voting.findVoting(newVoting);
+        voting.votingIsVisibleAndClick(newVoting);
         Thread.sleep(1000);
         voting.selectOptionInVoting();
         voting.clickSubmit();
         message.isElementLoaded(message.successfulPopuP);
         Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Your vote was submitted"));
-
-
-
     }
 
 }

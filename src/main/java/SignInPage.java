@@ -15,7 +15,7 @@ public class SignInPage {
         private WebElement emailField;
         @FindBy(id = "password")
         private WebElement passwordField;
-        @FindBy(css = "button[type='submit']")
+        @FindBy(xpath = "//div[@class = 'button-content'and contains(text(), 'Log me in')]")
         private WebElement logInMeClick;
 
 

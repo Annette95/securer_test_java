@@ -2,24 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c22450b0-215e-45b0-a1d5-10c1624a26fa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DividendPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/VotingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AddDividend_company_test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AddVoting_company_test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MakeVoting_investor_test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LockUnlockTokens_company_test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CheckingAsserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CheckingAsserts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AssetsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AssetsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataOfUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataOfUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/KYCpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KYCpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddAsset_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddAsset_company_test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AddDSO_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddDSO_company_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BurnTokes_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurnTokes_company_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CheckingAsserts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CheckingAsserts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DashboardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddDividend_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddDividend_company_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddTokenize_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddTokenize_company_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddVoting_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddVoting_company_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApproveAsset_admin_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApproveAsset_admin_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApproveDSO_admin_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApproveDSO_admin_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApproveInvest_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApproveInvest_company_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApproveKyc_admin_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApproveKyc_admin_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApprovingGetWL_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApprovingGetWL_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BurnTokes_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BurnTokens_company_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetWhiteListed_investor_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetWhiteListed_investor_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InvestTokens_investor_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InvestTokens_investor_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/KYCSubmit_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/KYCSubmit_company_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/KYCSubmit_investor_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/KYCSubmit_investor_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MakeVoting_investor_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MakeVoting_investor_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignIn_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignIn_company_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignIn_investor_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignIn_investor_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignUp_company_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUp_company_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignUp_investor_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUp_investor_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AdminPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AdminPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AssetsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AssetsPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/DataOfUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataOfUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/KYCpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/KYCpage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AddDSO_company_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AddDSO_company_test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BurnTokes_company_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BurnTokes_company_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AddAsset_company_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AddVoting_company_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AddVoting_company_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ApproveAsset_admin_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ApproveKyc_admin_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BurnTokes_company_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/KYCSubmit_company_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/KYCSubmit_investor_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignIn_company_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignIn_investor_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignUp_company_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignUp_investor_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,24 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddDividend_company_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AddDividend_company_test.java">
+      <file leaf-file-name="KYCSubmit_company_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/KYCSubmit_company_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1553690075622" expanded="true" signature="2409:2981" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DividendPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DividendPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="107" selection-end-column="5" />
+            <state relative-caret-position="102">
+              <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,63 +68,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VotingPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/VotingPage.java">
+      <file leaf-file-name="InvestTokens_investor_test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/InvestTokens_investor_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+            <state relative-caret-position="324">
+              <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddVoting_company_test.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AddVoting_company_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MakeVoting_investor_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MakeVoting_investor_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="51" column="117" selection-start-line="51" selection-start-column="117" selection-end-line="51" selection-end-column="117" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KYCpage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/KYCpage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="63" column="73" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DSOPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DSOPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-603">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1597#1598#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,6 +102,7 @@
       <find>token</find>
       <find>get</find>
       <find>submi</find>
+      <find>assetName</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,8 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config.json" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SignUpTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SignInTest_investor.java" />
         <option value="$PROJECT_DIR$/src/test/java/SignUpTest_company.java" />
@@ -161,49 +123,51 @@
         <option value="$PROJECT_DIR$/src/test/java/ApproveKycTest_admin.java" />
         <option value="$PROJECT_DIR$/src/test/java/KYC_investor.java" />
         <option value="$PROJECT_DIR$/src/test/java/KYC_company.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AdminPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ApproveDSO_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/GetWhiteListed_Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/DSOPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/CalculatorPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddAsset_company_Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ApproveAsset_admin_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ApproveDSO_admin_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ApproveKyc_admin_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/InvestTokens_investor_test.java" />
-        <option value="$PROJECT_DIR$/testSuite.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/AddAsset_company_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AddTokenize_company_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ApprovingGetWL_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GetWhiteListed_investor_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/KYCSubmit_company_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/KYCSubmit_investor_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SignIn_company_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SignIn_investor_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SignUp_company_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SignUp_investor_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ApproveInvest_company_test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AssetsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/BurnTokes_company_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AddDSO_company_test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SignUpPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SignInPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/CheckingAsserts.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddDividend.java" />
         <option value="$PROJECT_DIR$/src/main/java/DashboardPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/DividendPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataOfUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/KYCpage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AddDividend_company_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/VotingPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MakeVoting_investor_test.java" />
+        <option value="$PROJECT_DIR$/testSuite.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/AdminPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/KYCSubmit_company_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AddTokenize_company_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataOfUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SignUp_company_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SignUpPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SignUp_investor_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SignInPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SignIn_company_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SignIn_investor_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/KYCpage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/KYCSubmit_investor_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AddAsset_company_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ApproveAsset_admin_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ApprovingGetWL_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ApproveInvest_company_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AssetsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BurnTokens_company_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LockUnlockTokens_company_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AddDividend_company_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddVoting_company_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MakeVoting_investor_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AddDSO_company_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ApproveDSO_admin_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ApproveKyc_admin_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GetWhiteListed_investor_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/InvestTokens_investor_test.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1738" />
-    <option name="y" value="34" />
+    <option name="x" value="-1678" />
+    <option name="y" value="48" />
     <option name="width" value="1581" />
     <option name="height" value="965" />
   </component>
@@ -213,9 +177,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,14 +213,6 @@
               <item name="SecurerTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="SecurerTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imageHelpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecurerTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurerTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -271,6 +226,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AddVoting_company_test.addVotingAndSubmit">
+  <component name="RunManager" selected="TestNG.InvestTokens_investor_test.requestInvestTokens">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -312,62 +268,16 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="AddDividend_company_test.addDividendAndSubmit" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AddDividend_company_test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SecurerTest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AddDividend_company_test" />
-      <option name="METHOD_NAME" value="addDividendAndSubmit" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="AddDividend_company_test.makeTransfer" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SecurerTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddDividend_company_test" />
-      <option name="METHOD_NAME" value="makeTransfer" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="AddVoting_company_test.addDividendAndSubmit" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SecurerTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddVoting_company_test" />
-      <option name="METHOD_NAME" value="addDividendAndSubmit" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -404,14 +314,60 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="MakeVoting_investor_test.addDividendAndSubmit" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InvestTokens_investor_test.investTokens" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SecurerTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InvestTokens_investor_test" />
+      <option name="METHOD_NAME" value="investTokens" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="InvestTokens_investor_test.requestInvestTokens" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SecurerTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InvestTokens_investor_test" />
+      <option name="METHOD_NAME" value="requestInvestTokens" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="MakeVoting_investor_test.submitVote" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SecurerTest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MakeVoting_investor_test" />
-      <option name="METHOD_NAME" value="addDividendAndSubmit" />
+      <option name="METHOD_NAME" value="submitVote" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -450,19 +406,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.AddDividend_company_test.addDividendAndSubmit" />
-      <item itemvalue="TestNG.AddDividend_company_test.makeTransfer" />
-      <item itemvalue="TestNG.AddVoting_company_test.addDividendAndSubmit" />
-      <item itemvalue="TestNG.MakeVoting_investor_test.addDividendAndSubmit" />
+      <item itemvalue="TestNG.AddDividend_company_test" />
       <item itemvalue="TestNG.AddVoting_company_test.addVotingAndSubmit" />
+      <item itemvalue="TestNG.MakeVoting_investor_test.submitVote" />
+      <item itemvalue="TestNG.InvestTokens_investor_test.investTokens" />
+      <item itemvalue="TestNG.InvestTokens_investor_test.requestInvestTokens" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.InvestTokens_investor_test.requestInvestTokens" />
+        <item itemvalue="TestNG.InvestTokens_investor_test.investTokens" />
+        <item itemvalue="TestNG.MakeVoting_investor_test.submitVote" />
         <item itemvalue="TestNG.AddVoting_company_test.addVotingAndSubmit" />
-        <item itemvalue="TestNG.MakeVoting_investor_test.addDividendAndSubmit" />
-        <item itemvalue="TestNG.AddVoting_company_test.addDividendAndSubmit" />
-        <item itemvalue="TestNG.AddDividend_company_test.makeTransfer" />
-        <item itemvalue="TestNG.AddDividend_company_test.addDividendAndSubmit" />
+        <item itemvalue="TestNG.AddDividend_company_test" />
       </list>
     </recent_temporary>
   </component>
@@ -480,39 +436,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MakeVoting_investor_test_addDividendAndSubmit - 2019.03.27 at 16h 25m 23s.xml">
-      <configuration name="MakeVoting_investor_test.addDividendAndSubmit" configurationId="TestNG" />
+    <history-entry file="LockUnlockTokens_company_test - 2019.03.28 at 14h 41m 43s.xml">
+      <configuration name="LockUnlockTokens_company_test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MakeVoting_investor_test_addDividendAndSubmit - 2019.03.27 at 16h 25m 43s.xml">
-      <configuration name="MakeVoting_investor_test.addDividendAndSubmit" configurationId="TestNG" />
+    <history-entry file="AddDividend_company_test_addDividendAndSubmit - 2019.03.28 at 14h 42m 45s.xml">
+      <configuration name="AddDividend_company_test.addDividendAndSubmit" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MakeVoting_investor_test_addDividendAndSubmit - 2019.03.27 at 16h 26m 04s.xml">
-      <configuration name="MakeVoting_investor_test.addDividendAndSubmit" configurationId="TestNG" />
+    <history-entry file="AddDividend_company_test - 2019.03.28 at 14h 45m 39s.xml">
+      <configuration name="AddDividend_company_test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MakeVoting_investor_test_addDividendAndSubmit - 2019.03.27 at 16h 29m 59s.xml">
-      <configuration name="MakeVoting_investor_test.addDividendAndSubmit" configurationId="TestNG" />
+    <history-entry file="AddVoting_company_test_addVotingAndSubmit - 2019.03.28 at 14h 48m 18s.xml">
+      <configuration name="AddVoting_company_test.addVotingAndSubmit" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MakeVoting_investor_test_addDividendAndSubmit - 2019.03.27 at 16h 33m 43s.xml">
-      <configuration name="MakeVoting_investor_test.addDividendAndSubmit" configurationId="TestNG" />
+    <history-entry file="AddVoting_company_test_addVotingAndSubmit - 2019.03.28 at 14h 48m 43s.xml">
+      <configuration name="AddVoting_company_test.addVotingAndSubmit" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MakeVoting_investor_test_addDividendAndSubmit - 2019.03.27 at 16h 35m 29s.xml">
-      <configuration name="MakeVoting_investor_test.addDividendAndSubmit" configurationId="TestNG" />
+    <history-entry file="AddVoting_company_test_addVotingAndSubmit - 2019.03.28 at 14h 49m 35s.xml">
+      <configuration name="AddVoting_company_test.addVotingAndSubmit" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MakeVoting_investor_test_addDividendAndSubmit - 2019.03.27 at 16h 36m 22s.xml">
-      <configuration name="MakeVoting_investor_test.addDividendAndSubmit" configurationId="TestNG" />
+    <history-entry file="MakeVoting_investor_test_submitVote - 2019.03.28 at 14h 52m 23s.xml">
+      <configuration name="MakeVoting_investor_test.submitVote" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MakeVoting_investor_test_addDividendAndSubmit - 2019.03.27 at 16h 54m 05s.xml">
-      <configuration name="MakeVoting_investor_test.addDividendAndSubmit" configurationId="TestNG" />
+    <history-entry file="InvestTokens_investor_test_investTokens - 2019.03.28 at 15h 45m 51s.xml">
+      <configuration name="InvestTokens_investor_test.investTokens" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MakeVoting_investor_test_addDividendAndSubmit - 2019.03.27 at 16h 57m 23s.xml">
-      <configuration name="MakeVoting_investor_test.addDividendAndSubmit" configurationId="TestNG" />
+    <history-entry file="InvestTokens_investor_test_requestInvestTokens - 2019.03.28 at 15h 46m 05s.xml">
+      <configuration name="InvestTokens_investor_test.requestInvestTokens" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MakeVoting_investor_test_addDividendAndSubmit - 2019.03.27 at 16h 58m 13s.xml">
-      <configuration name="MakeVoting_investor_test.addDividendAndSubmit" configurationId="TestNG" />
+    <history-entry file="InvestTokens_investor_test_requestInvestTokens - 2019.03.28 at 15h 46m 31s.xml">
+      <configuration name="InvestTokens_investor_test.requestInvestTokens" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1738" y="34" width="1581" height="965" extended-state="0" />
+    <frame x="-1678" y="48" width="1581" height="965" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
@@ -523,25 +479,25 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32718894" />
       <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32718894" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.24423963" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.24496426" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.24821313" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32949308" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.3986175" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.3986175" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.24951267" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32949308" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -549,7 +505,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="50" />
+      <option name="time" value="56" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -609,9 +565,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -641,6 +594,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/org/openqa/selenium/WebElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
@@ -648,57 +608,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testSuite.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SignUp_company_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        <state relative-caret-position="414">
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SignUp_investor_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="119">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/InvestTokens_investor_test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SignUpPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GetWhiteListed_investor_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/KYCSubmit_company_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="64" column="120" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="120" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/KYCSubmit_investor_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        <state relative-caret-position="267">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -707,192 +642,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SignIn_company_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="53" column="129" selection-start-line="53" selection-start-column="85" selection-end-line="53" selection-end-column="129" />
+        <state relative-caret-position="319">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ApprovingGetWL_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ApproveKyc_admin_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ApproveInvest_company_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ApproveDSO_admin_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ApproveAsset_admin_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddTokenize_company_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="63" column="121" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="121" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BurnTokes_company_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddAsset_company_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="70" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AdminPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1591">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SignUp_company_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="73" column="82" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="73" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SignIn_investor_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="53" column="48" selection-start-line="53" selection-end-line="54" />
+        <state relative-caret-position="245">
+          <caret line="44" column="82" selection-start-line="44" selection-start-column="82" selection-end-line="44" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddDSO_company_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/KYCSubmit_investor_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="64" column="124" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="64" selection-end-column="124" />
+        <state relative-caret-position="372">
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/org/openqa/selenium/WebElement.class">
+    <entry file="file://$PROJECT_DIR$/testSuite.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        <state relative-caret-position="150">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DashboardPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/LockUnlockTokens_company_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+        <state relative-caret-position="342">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataOfUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="323" selection-start-line="25" selection-start-column="323" selection-end-line="25" selection-end-column="323" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AssetsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3422">
-          <caret line="296" column="3" lean-forward="true" selection-start-line="296" selection-start-column="3" selection-end-line="300" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CalculatorPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SignUpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SignInPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="1212">
+          <caret line="284" column="14" selection-start-line="284" selection-start-column="14" selection-end-line="284" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -901,7 +703,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CheckingAsserts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
+        <state relative-caret-position="15">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -911,20 +713,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KYCpage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CalculatorPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="63" column="73" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="73" />
+        <state relative-caret-position="435">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DSOPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-603">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="180">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DashboardPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -933,41 +745,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DividendPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="107" selection-end-column="5" />
+        <state relative-caret-position="1354">
+          <caret line="102" selection-start-line="102" selection-end-line="107" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddDividend_company_test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SignInPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        <state relative-caret-position="162">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1553690075622" expanded="true" signature="2409:2981" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/VotingPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+        <state relative-caret-position="-843">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KYCpage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="103" column="43" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DSOPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="64" column="90" selection-start-line="64" selection-start-column="75" selection-end-line="64" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataOfUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MakeVoting_investor_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="51" column="117" selection-start-line="51" selection-start-column="117" selection-end-line="51" selection-end-column="117" />
+        <state relative-caret-position="261">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddDividend_company_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1553777285516" expanded="true" signature="2534:3106" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddAsset_company_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddDSO_company_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1400#1401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddTokenize_company_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -976,10 +859,114 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AddVoting_company_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+        <state relative-caret-position="437">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ApproveAsset_admin_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="47" column="50" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ApproveDSO_admin_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ApproveInvest_company_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="50" column="104" selection-start-line="50" selection-start-column="104" selection-end-line="50" selection-end-column="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ApproveKyc_admin_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1503#1504#0" expanded="true" />
+            <element signature="e#1532#1533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ApprovingGetWL_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="36" selection-start-line="36" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GetWhiteListed_investor_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BurnTokens_company_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="38" selection-start-line="38" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/KYCSubmit_company_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/InvestTokens_investor_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -50,7 +50,7 @@ public class AssetsPage {
     @FindBy(css = "button[aria-label='save']")
     private WebElement saveButton;
 
-    @FindBy(xpath = "//*[contains(@class,'mr-2 btn btn-primary') and contains(text(), 'Tokenize')]")
+    @FindBy(xpath = "//button[@class = 'mr-2 btn btn-primary' and contains(text(), 'Tokenize')]")
     private WebElement tokenizeButton;
 
     @FindBy(id = "tokenName")
@@ -74,8 +74,8 @@ public class AssetsPage {
     @FindBy(css = "input[name='partitionName']")
     private WebElement namePartititonInput;
 
-    @FindBy(xpath = "//*[contains(text(), 'Next')]")
-    public WebElement nextPageButton;
+    @FindBy(xpath = "//button[@class = 'page-link' and contains(text(), 'Last')]")
+    private WebElement lastPageButton;
 
     @FindBy(css = "button[aria-label='tokenize']")
     private WebElement tokenizeSubmit;
@@ -137,7 +137,7 @@ public class AssetsPage {
     public AssetsPage selectOption(String listName, String option) {
         String listLocator = String.format("select[name='%s']", listName);
         driver.findElement(By.cssSelector(listLocator)).click();
-        String optionLocator = String.format("//select[@name = '%s']/option[@value = '%s']", listName, option);
+        String optionLocator = String.format("//select[@name = '%s']/option[text() = '%s']", listName, option);
         driver.findElement(By.xpath(optionLocator)).click();
         return this;
     }
@@ -202,13 +202,8 @@ public class AssetsPage {
 
     public AssetsPage clickOnAsset(String asset) {
         String assetDetails = String.format("//h6/div[contains(text(),'%s')]", asset);
+        driver.findElement(By.xpath(assetDetails)).isDisplayed();
         driver.findElement(By.xpath(assetDetails)).click();
-        return this;
-    }
-
-
-    public AssetsPage clickNextPage() {
-        nextPageButton.click();
         return this;
     }
 
@@ -244,6 +239,8 @@ public class AssetsPage {
     }
 
     public AssetsPage clickApprove() {
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView()", approveButton);
         approveButton.click();
         return this;
     }
@@ -312,8 +309,9 @@ public class AssetsPage {
         return this;
     }
 
-    public AssetsPage clickLockTokens(){
-        lockButton.click();
+    public AssetsPage clickLockUnlockTokens(){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(lockButton).click().perform();
         return this;
     }
 
@@ -324,6 +322,11 @@ public class AssetsPage {
 
     public AssetsPage clickSubmitBurn() {
         submitBurn.click();
+        return this;
+    }
+
+    public AssetsPage clickLast(){
+        lastPageButton.click();
         return this;
     }
 

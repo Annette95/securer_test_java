@@ -3,6 +3,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,6 +19,9 @@ public class AddDividend_company_test {
     public DividendPage dividend;
     private DataOfUser data;
 
+    String assetForDSO = "Crowne Plaza Shanghai Parking Lot";
+    String newDivivend = "Dividend - autotest6";
+
     @BeforeMethod
     public void setUp() {
         data = new DataOfUser(driver);
@@ -30,24 +34,24 @@ public class AddDividend_company_test {
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
         dividend = PageFactory.initElements(driver, DividendPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
-        signIn.typeEmail(data.companyEmail)
+        signIn.typeEmail(data.companyEmailEx)
                 .typePassword(data.password)
                 .clickLogIn();
         dashboard.clickDividends();
 
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
     public void addDividendAndSubmit() {
         message.isElementLoaded(message.pageTitle);
         Assert.assertThat(message.pageTitle.getText(), CoreMatchers.containsString("DIVIDENDS HISTORY"));
         dividend.clickAddDividend();
-        dividend.selectOption("Crowne Plaza Shanghai Parking Lot");
+        dividend.selectOption(assetForDSO);
         dividend.clickSelect();
         message.isElementLoaded(message.pageTitle);
         Assert.assertThat(message.pageTitle.getText(), CoreMatchers.containsString("ASSET INFO"));
@@ -72,17 +76,17 @@ public class AddDividend_company_test {
         message.isElementLoaded(message.successfulPopuP);
         Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Dividend was added successfully"));
         Assert.assertThat(message.pageTitle.getText(), CoreMatchers.containsString("DIVIDENDS HISTORY"));
-        dividend.findDividend("Dividend - autotest5");
-        dividend.dividendIsVisibleAndClick("Dividend - autotest5");
+        dividend.findDividend(newDivivend);
+        dividend.dividendIsVisibleAndClick(newDivivend);
     }
 
     @Test
     public void makeTransfer() {
         message.isElementLoaded(message.pageTitle);
         Assert.assertThat(message.pageTitle.getText(), CoreMatchers.containsString("DIVIDENDS HISTORY"));
-        dividend.findDividend("Dividend 27/03 - autotest1");
-        dividend.dividendIsVisibleAndClick("Dividend 27/03 - autotest1");
-        dividend.checkInvestor("3");
+        dividend.findDividend(newDivivend);
+        dividend.dividendIsVisibleAndClick(newDivivend);
+        dividend.checkInvestor("1");
         dividend.clickTransfer();
         message.isElementLoaded(message.successfulPopuP);
         Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Transfer success"));

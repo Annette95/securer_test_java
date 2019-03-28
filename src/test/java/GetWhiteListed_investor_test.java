@@ -3,6 +3,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -15,8 +16,6 @@ public class GetWhiteListed_investor_test {
     private CheckingAsserts message;
     public AssetsPage asset;
     private DataOfUser data;
-
-    String assetName = "Test";
 
     @BeforeMethod
     public void setUp() {
@@ -35,16 +34,17 @@ public class GetWhiteListed_investor_test {
                 .clickLogIn();
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
     public void getWhiteListedClick() {
         dashboard.clickProfile();
         driver.get("https://dev-investor.securer.io/assets");
-        asset.clickOnAsset("Joan Miro Amaze Token");
+        asset.clickLast();
+        asset.clickOnAsset(data.assetName);
         asset.submitGetWhiteListed();
         asset.clickYes();
         message.isElementLoaded(message.successfulPopuP);

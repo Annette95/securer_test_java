@@ -47,7 +47,7 @@ public class SignUp_company_test {
 
     @Test
     public void introducingInvalidEmail() {
-        page.typeEmail(data.companyEmail)
+        page.typeEmail(data.companyEmailEx)
                 .typePassword(data.password)
                 .repeatPass(data.password)
                 .clickRegister();
@@ -76,12 +76,12 @@ public class SignUp_company_test {
 
     @Test
     public void successfullRegister() {
-        page.typeEmail("demo-company+3@securer.io")
+        page.typeEmail(data.companyEmail)
                 .typePassword(data.password)
                 .repeatPass(data.password)
                 .clickRegister();
         message.isElementLoaded(dashboard.sideBar);
-        Assert.assertThat(driver.getCurrentUrl(),CoreMatchers.equalTo(data.urlCompany +"dashboard"));
+        Assert.assertThat(driver.getCurrentUrl(),CoreMatchers.equalTo(data.urlCompany +"/dashboard"));
     }
 }
 

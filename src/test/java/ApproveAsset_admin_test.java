@@ -1,9 +1,11 @@
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -34,22 +36,23 @@ public class ApproveAsset_admin_test {
 
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
-    public void adminApprovesAsset() {
+    public void adminApprovesAsset() throws InterruptedException {
         admin.assetsClick();
-        admin.clickAssetDetails("171");
+        Thread.sleep(2000);
+        String asset = driver.findElement(By.xpath("//*[@id='root']/div/main/div/div[3]/div/div/div[1]/div[2]/div[1]/div/div[1]")).getText();
+        admin.clickAssetDetails(asset);
         admin.clickApprove();
         admin.clickYes();
-        admin.statusIsVisible("171");
+        admin.statusIsVisible(asset);
         driver.navigate().refresh();
-        WebElement assetStatus = admin.statusIsVisible("171");
+        WebElement assetStatus = admin.statusIsVisible(asset);
         message.isElementLoaded(assetStatus);
         Assert.assertThat(assetStatus.getText(), CoreMatchers.equalTo("Approved"));
-
     }
 }

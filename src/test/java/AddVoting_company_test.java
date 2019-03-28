@@ -3,6 +3,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -30,17 +31,17 @@ public class AddVoting_company_test {
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
         voting = PageFactory.initElements(driver, VotingPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
-        signIn.typeEmail(data.companyEmail)
+        signIn.typeEmail(data.companyEmailEx)
                 .typePassword(data.password)
                 .clickLogIn();
         dashboard.clickVotings();
 
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
     public void addVotingAndSubmit() {
@@ -59,8 +60,8 @@ public class AddVoting_company_test {
         Assert.assertEquals("Incorrect errors", errorLabels, message.getErrors());
         String vote = "Voting - Autotest3";
         voting.fillVotingForm(vote,data.votingDescr);
-        voting.typeFromDate("03/28/2019\n");
-        voting.typeToDate("04/05/2019");
+        voting.typeFromDate("09/28/2019\n");
+        voting.typeToDate("12/05/2019");
         voting.clickAddOption();
         voting.inputOption("1","first");
         voting.clickAddOption();
@@ -75,7 +76,7 @@ public class AddVoting_company_test {
         voting.uploadFile("file","kity.jpg");
         voting.clickCreateEvent();
         message.isElementLoaded(message.successfulPopuP);
-        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Voting event was added successfully\n"));
+        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Voting event was added successfully"));
         Assert.assertThat(message.pageTitle.getText(), CoreMatchers.containsString("VOTING EVENTS"));
         voting.findVoting(vote);
         voting.votingIsVisibleAndClick(vote);

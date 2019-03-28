@@ -3,16 +3,18 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class KYCSubmit_company_test {
+public class BurnTokens_company_test {
     public WebDriver driver;
     private SignInPage signIn;
     public DashboardPage dashboard;
-    private KYCpage kyc;
     private CheckingAsserts message;
+    public AssetsPage asset;
     private DataOfUser data;
 
     @BeforeMethod
@@ -25,12 +27,12 @@ public class KYCSubmit_company_test {
         driver.get(data.urlCompany);
         signIn = PageFactory.initElements(driver, SignInPage.class);
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
-        kyc = PageFactory.initElements(driver, KYCpage.class);
+        asset = PageFactory.initElements(driver, AssetsPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
         signIn.typeEmail(data.companyEmail)
                 .typePassword(data.password)
                 .clickLogIn();
-        dashboard.clickProfile();
+        dashboard.clickAssets();
 
     }
 
@@ -40,28 +42,19 @@ public class KYCSubmit_company_test {
     }
 
     @Test
-    public void FillKYCFORM() {
-        kyc.fillKKYC1stStepCompany(
-                "pharma",
-                "pharma.com",
-                "Anna",
-                "Miller",
-                "canavinanna@gmail.com",
-                "2000",
-                "12");
-        kyc.selectOption("sector", "Housing");
-        kyc.selectOption("country", "Antarctica");
-        kyc.clickNext();
-        kyc.uploadFile("file_1", "kity.jpg");
-        kyc.uploadFile("file_2", "kity.jpg");
-        kyc.uploadFile("file_3", "kity.jpg");
-        kyc.uploadFile("file_4", "kity.jpg");
-        kyc.uploadFile("file_5", "kity.jpg");
-        kyc.uploadFile("file_6", "kity.jpg");
-        kyc.clickNext();
-        kyc.clickNext();
+    public void burnTokens() throws InterruptedException {
+        asset.clickOnAsset(data.assetName);
+        Thread.sleep(1000);
+        asset.clickToAction(data.investorEmail);
+        Thread.sleep(1000);
+        asset.choosePartition("partitions-partition-3");
+        asset.isPartitionSelected("partitions-partition-3");
+        asset.inputAmount("10");
+        asset.clickBurnTokens();
+        asset.uploadFile("file", "kity.jpg");
+        asset.inputComment("QA");
+        asset.clickSubmitBurn();
         message.isElementLoaded(message.successfulPopuP);
-        Assert.assertThat(message.successfulPopuP.getText(),CoreMatchers.containsString("KYC was successfully submitted!"));
+        Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("Burn was successfull"));
     }
-
 }

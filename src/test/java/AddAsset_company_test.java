@@ -37,18 +37,18 @@ public class AddAsset_company_test {
 
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
-    public void fillKycAndSubmit() {
+    public void fillAssetAndSubmit() {
         asset.clickAddAsset();
         asset.selectOption("country", "France");
-        asset.fillEntityDetails("AutoTest", "12", "OOO", "12", "Selenium", "Paris");
+        asset.fillEntityDetails(data.assetName, "12", "OOO", "12", "Selenium", "Paris");
         asset.clickNext();
-        asset.selectOption("isPublic", "Yes");
+        asset.selectOption("isPublic", "Public");
         asset.selectOption("assetType", "Shares");
         asset.introduceDescription("Sed ut perspiciatis unde omnis iste natus error ");
         asset.introduceDetailedDescription(data.longDescription);

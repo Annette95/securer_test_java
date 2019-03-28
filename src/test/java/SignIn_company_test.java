@@ -1,6 +1,5 @@
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -39,14 +38,10 @@ public class SignIn_company_test {
 
 
     @Test
-    public void emptyForm() {
+    public void emptyFormAndIncorrectEmail() {
         signIn.clickLogIn();
         List<String> errorLabels = Arrays.asList("Required", "Required");
         Assert.assertEquals("Incorrect errors", errorLabels, message.getErrors());
-    }
-
-    @Test
-    public void incorrectEmail() {
         signIn.typeEmail("demo.demo.demo.company@mail.ru")
                 .typePassword(data.password)
                 .clickLogIn();
@@ -55,9 +50,9 @@ public class SignIn_company_test {
     }
 
 
-    @Test
+    @Ignore
     public void loginAsCompany() {
-        signIn.typeEmail("demo-company+3@securer.io")
+        signIn.typeEmail(data.companyEmail)
                 .typePassword(data.password)
                 .clickLogIn();
         message.isElementLoaded(dashboard.sideBar);

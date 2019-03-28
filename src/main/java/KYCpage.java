@@ -1,6 +1,8 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 import java.io.File;
@@ -24,8 +26,7 @@ public class KYCpage {
     private WebElement lastNameField;
     @FindBy(id = "email")
     private WebElement emailField;
-    @FindBy(id = "sizeOfOffering")
-    private WebElement sizeOfOfferingField;
+
     @FindBy(id = "yearFounded")
     private WebElement yearFoundedField;
     @FindBy(id = "workersCount")
@@ -45,25 +46,33 @@ public class KYCpage {
 
     public KYCpage fillKKYC1stStepCompany(String company, String site,
                                           String fname, String lname,
-                                          String email, String size, String year,
+                                          String email, String year,
                                           String workers) {
         companyNameField.sendKeys(company);
         companyWebsiteField.sendKeys(site);
         firstNameField.sendKeys(fname);
         lastNameField.sendKeys(lname);
         emailField.sendKeys(email);
-        sizeOfOfferingField.sendKeys(size);
         yearFoundedField.sendKeys(year);
         workersCountField.sendKeys(workers);
         nextButton.click();
         return this;
     }
 
+
     public KYCpage selectOption(String listName, String option) {
         String listLocator = String.format("select[name='%s']", listName);
         String optionLocator = String.format("//*[contains(text(), '%s')]", option);
         driver.findElement(By.cssSelector(listLocator)).click();
         driver.findElement(By.xpath(optionLocator)).click();
+        return this;
+    }
+
+    public KYCpage selectFlag(String country) {
+        driver.findElement(By.xpath("//*[@class = 'selected-flag']")).click();
+        String countryLocator = String.format("//*[@class = 'country-name' and contains(text(),'%s')]", country);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(By.xpath(countryLocator))).click().perform();
         return this;
     }
 
@@ -79,16 +88,21 @@ public class KYCpage {
         return this;
     }
 
-    public KYCpage fillKKYC1stStepInvestorIndividual(String fName, String lName,
-                                           String email, String city,
-                                           String state, String phone, String birthday) {
+    public KYCpage fillKKYC1stStepInvestorIndividual(String birthday,String fName, String lName,
+                                                     String email, String city,
+                                                     String state) {
+        dateOfBirthField.sendKeys(birthday);
         firstNameField.sendKeys(fName);
         lastNameField.sendKeys(lName);
         emailField.sendKeys(email);
         cityField.sendKeys(city);
         stateField.sendKeys(state);
-        phoneNumberField.sendKeys(phone);
         dateOfBirthField.sendKeys(birthday);
+        return this;
+    }
+
+    public KYCpage typePhone(String phone){
+        phoneNumberField.sendKeys(phone);
         return this;
     }
 

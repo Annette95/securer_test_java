@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "TestSuite">
-    <test name = "MainFlows">
+<suite name="TestSuite">
+    <test name="MainFlows">
         <classes>
-            <class name= "SignUp_company_test" />
-            <class name= "SignUp_investor_test" />
-            <class name= "SignIn_company_test"/>
-            <class name= "SignIn_investor_test"/>
+            <class name="SignUp_company_test"/>
+            <class name="SignUp_investor_test"/>
+            <class name="SignIn_company_test"/>
+            <class name="SignIn_investor_test"/>
             <class name="KYCSubmit_company_test"/>
             <class name="KYCSubmit_investor_test"/>
             <class name="ApproveKyc_admin_test"/>
@@ -17,7 +17,13 @@
             <class name="AddDSO_company_test"/>
             <class name="ApproveDSO_admin_test"/>
             <class name="InvestTokens_investor_test"/>
+            <class name="ApproveInvest_company_test"/>
+            <class name="BurnTokens_company_test"/>
+            <class name="LockUnlockTokens_company_test"/>
+            <class name="AddDividend_company_test"/>
+            <class name="AddVoting_company_test"/>
+            <class name="MakeVoting_investor_test"/>
         </classes>
-            </test>
+    </test>
 </suite>
 

@@ -1,19 +1,12 @@
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
-
-import static org.junit.Assert.*;
 
 public class ApproveKyc_admin_test {
     public WebDriver driver;
@@ -40,10 +33,10 @@ public class ApproveKyc_admin_test {
 
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
     public void adminApprovesKYCofCompany() {
@@ -66,8 +59,8 @@ public class ApproveKyc_admin_test {
     @Test
     public void adminApprovesKYCofInvestor() {
         admin.investorClick();
-        admin.statusIsVisible("investor14@banit.me");
-        admin.clickKYC("investor14@banit.me");
+        admin.statusIsVisible(data.investorEmail);
+        admin.clickKYC(data.investorEmail);
         try {
             admin.clickApprove();
         } catch (org.openqa.selenium.StaleElementReferenceException ex) {
@@ -75,9 +68,9 @@ public class ApproveKyc_admin_test {
         }
         admin.clickApprove();
         admin.clickYes();
-        admin.statusIsVisible("investor14@banit.me");
+        admin.statusIsVisible(data.investorEmail);
         driver.navigate().refresh();
-        WebElement kycStatusOf = admin.statusIsVisible("investor14@banit.me");
+        WebElement kycStatusOf = admin.statusIsVisible(data.investorEmail);
         message.isElementLoaded(kycStatusOf);
         Assert.assertThat(kycStatusOf.getText(), CoreMatchers.equalTo("Approved"));
     }

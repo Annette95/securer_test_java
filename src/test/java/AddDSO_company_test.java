@@ -3,6 +3,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -35,31 +36,31 @@ public class AddDSO_company_test {
 
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
     public void addDSOAndSubmit() throws InterruptedException {
         Thread.sleep(1000);
         dso.clickAddDSO();
-        dso.selectOption("assetId", "Test");
+        dso.selectOption("assetId", data.assetName);
         dso.clickAddPartition();
         dso.typePartition("fdfdsf");
         dso.clickSelectPartition();
-        dso.selectOption("partitionId", "First");
+        dso.selectOption("partitionId", data.part1);
         dso.clickNext();
         dso.fillDSOForm("03/21/2019\n","12/21/2019\n","1","20000","12","10000");
         dso.selectOption("tokenCurrency","USD");
-        java.lang.String[] currency = {"EUR\n","USD\n","ETH\n"};
+        java.lang.String[] currency = {"EUR\n","USD\n","ETH\n","RMB\n"};
         dso.typeInvestmentCurrencies(currency);
         dso.clickNext();
         dso.clickSubmit();
         message.isElementLoaded(message.successfulPopuP);
         Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("DSO was added successfully"));
         message.isElementLoaded(message.pageTitle);
-        dso.submitDSO("Test");
+        dso.submitDSO(data.assetName);
         dso.clickYes();
         message.isElementLoaded(message.successfulPopuP);
         Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("DSO was submitted successfully"));

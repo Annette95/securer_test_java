@@ -1,9 +1,9 @@
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
-import org.junit.experimental.theories.Theories;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,7 +18,6 @@ public class InvestTokens_investor_test {
     private DataOfUser data;
     private CalculatorPage calculator;
 
-    String assetName = "Test";
 
     @BeforeMethod
     public void setUp() {
@@ -38,16 +37,17 @@ public class InvestTokens_investor_test {
                 .clickLogIn();
     }
 
-//    @AfterMethod
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void closeDriver() {
+        driver.quit();
+    }
 
     @Test
     public void investTokens() throws InterruptedException {
         dashboard.clickProfile();
         driver.get("https://dev-investor.securer.io/assets");
-        asset.clickOnAsset("Huayuan Underground Parking Lot");
+        asset.clickLast();
+        asset.clickOnAsset(data.assetName);
         asset.clickInvest();
         message.isElementLoaded(message.pageTitle);
         Assert.assertThat(message.pageTitle.getText(), CoreMatchers.containsString("CALCULATOR"));
@@ -65,10 +65,11 @@ public class InvestTokens_investor_test {
     }
 
     @Test
-    public void requestInvestTokens() throws InterruptedException {
+    public void requestInvestTokens() {
         dashboard.clickProfile();
         driver.get("https://dev-investor.securer.io/assets");
-        asset.clickOnAsset("Huayuan Underground Parking Lot");
+        asset.clickLast();
+        asset.clickOnAsset(data.assetName);
         asset.clickRequestInvest();
         asset.inputAmount("500");
         asset.clickRequest();
