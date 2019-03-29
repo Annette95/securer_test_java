@@ -46,7 +46,7 @@ public class SignUp_company_test {
     @Test
     public void emptyForm() {
         page.clickRegister();
-        List<String> errorLabels = Arrays.asList("Required", "Required", "not");
+        List<String> errorLabels = Arrays.asList("Required", "Required", "Required");
         Assert.assertEquals("Incorrect errors", errorLabels, message.getErrors());
     }
 
