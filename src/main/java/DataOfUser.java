@@ -19,7 +19,8 @@ public class DataOfUser {
     String investorEmail = "investor+2@example.com";
     String adminEmail = "admin@example.com";
     String password = "qwe123";
-    String assetName = "AutoTest2";
+
+    String assetName = "29/03 - Asset Autotest_2";
     String part1 = "First";
     String part2 = "Second";
     String part3 = "Third";

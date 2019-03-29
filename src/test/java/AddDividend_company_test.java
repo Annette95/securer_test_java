@@ -3,10 +3,12 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -42,7 +44,10 @@ public class AddDividend_company_test {
     }
 
     @AfterMethod
-    public void closeDriver() {
+    public void tearDown(ITestResult testResult) throws IOException {
+        if(testResult.getStatus()==ITestResult.FAILURE){
+            utilities.Screenshots.takeScreenshot(driver, testResult.getName());
+        }
         driver.quit();
     }
 

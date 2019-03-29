@@ -1,9 +1,9 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-
-import static java.lang.String.format;
 
 public class AdminPage {
     private WebDriver driver;
@@ -30,7 +30,7 @@ public class AdminPage {
     @FindBy(css = "button[value='approved']")
     public WebElement approveButton;
 
-    @FindBy(xpath = "//*[contains(text(), 'Yes')]")
+    @FindBy(className = "btn-success")////*[contains(text(), 'Yes')]
     private WebElement yesButton;
 
     @FindBy(className = "btn-danger")  //"//*[contains(text(), 'No')]"
@@ -74,7 +74,9 @@ public class AdminPage {
     }
 
     public AdminPage clickApprove() {
-        approveButton.click();
+        JavascriptExecutor ex = (JavascriptExecutor) driver;
+        ex.executeScript("arguments[0].click();", approveButton);
+     //   approveButton.click();
         return this;
     }
 

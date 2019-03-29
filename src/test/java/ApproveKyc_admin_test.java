@@ -4,8 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class ApproveKyc_admin_test {
@@ -34,7 +36,10 @@ public class ApproveKyc_admin_test {
     }
 
     @AfterMethod
-    public void closeDriver() {
+    public void tearDown(ITestResult testResult) throws IOException {
+        if(testResult.getStatus()==ITestResult.FAILURE){
+            utilities.Screenshots.takeScreenshot(driver, testResult.getName());
+        }
         driver.quit();
     }
 

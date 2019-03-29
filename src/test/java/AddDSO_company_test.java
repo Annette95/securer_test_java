@@ -3,10 +3,12 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class AddDSO_company_test {
@@ -29,7 +31,7 @@ public class AddDSO_company_test {
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
         dso = PageFactory.initElements(driver, DSOPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
-        signIn.typeEmail(data.companyEmail)
+        signIn.typeEmail(data.companyEmailEx)
                 .typePassword(data.password)
                 .clickLogIn();
         dashboard.clickDSO();
@@ -37,7 +39,10 @@ public class AddDSO_company_test {
     }
 
     @AfterMethod
-    public void closeDriver() {
+    public void tearDown(ITestResult testResult) throws IOException {
+        if(testResult.getStatus()==ITestResult.FAILURE){
+            utilities.Screenshots.takeScreenshot(driver, testResult.getName());
+        }
         driver.quit();
     }
 
@@ -60,6 +65,7 @@ public class AddDSO_company_test {
         message.isElementLoaded(message.successfulPopuP);
         Assert.assertThat(message.successfulPopuP.getText(), CoreMatchers.containsString("DSO was added successfully"));
         message.isElementLoaded(message.pageTitle);
+        Thread.sleep(1000);
         dso.submitDSO(data.assetName);
         dso.clickYes();
         message.isElementLoaded(message.successfulPopuP);

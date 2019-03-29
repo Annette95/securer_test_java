@@ -3,10 +3,12 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class AddAsset_company_test {
@@ -30,7 +32,7 @@ public class AddAsset_company_test {
         dashboard = PageFactory.initElements(driver, DashboardPage.class);
         asset = PageFactory.initElements(driver, AssetsPage.class);
         message = PageFactory.initElements(driver, CheckingAsserts.class);
-        signIn.typeEmail(data.companyEmail)
+        signIn.typeEmail(data.companyEmailEx)
                 .typePassword(data.password)
                 .clickLogIn();
         dashboard.clickAssets();
@@ -38,7 +40,10 @@ public class AddAsset_company_test {
     }
 
     @AfterMethod
-    public void closeDriver() {
+    public void tearDown(ITestResult testResult) throws IOException {
+        if(testResult.getStatus()==ITestResult.FAILURE){
+            utilities.Screenshots.takeScreenshot(driver, testResult.getName());
+        }
         driver.quit();
     }
 
@@ -52,7 +57,7 @@ public class AddAsset_company_test {
         asset.selectOption("assetType", "Shares");
         asset.introduceDescription("Sed ut perspiciatis unde omnis iste natus error ");
         asset.introduceDetailedDescription(data.longDescription);
-        asset.uploadFile("image", "kity.jpg");
+        asset.uploadFile("image", "test2.jpeg");
         asset.clickNext();
         asset.clickAddNewDoc();
         asset.typeTitle("licence");
